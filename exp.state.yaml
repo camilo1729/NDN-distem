@@ -1,0 +1,17 @@
+---
+jobid: 623254
+addr: 10.144.0.0/22
+nodes:
+- graphene-30.nancy.grid5000.fr
+- graphene-47.nancy.grid5000.fr
+- graphene-49.nancy.grid5000.fr
+- graphene-105.nancy.grid5000.fr
+:descr:
+  pnodes: 4
+  site: nancy
+  time: '03:00:00'
+  env: jessie-x64-big
+  subnets:
+  - 22
+  - 1
+  topo: topo.yaml
