@@ -98,17 +98,23 @@ puts "taktuk"
 
 sleep 2
 
+# Testing connection
+Net::SSH::Multi.start do |session|
+   session.group :vnodes do
+     topo.keys.each { |vnode| session.use("root@#{vnode}-adm",{:paranoid => false})}
+   end
+   puts session.with(:vnodes).exec "hostname"
+end
+
+
 # we need to transfert file using the admin network
 topo.keys.each do |vnode|
   # setting admin address
   node_name = "#{vnode}-adm"
   Net::SCP.start(node_name,'root') do |scp|
-    conf = `ls root/nlsr-*.conf`.split("\n")
-    conf.push("root/nlsr-start.sh")
-    conf.each{ |f|
-      puts "uploading #{File.basename(f)} to node: #{node_name}"
-      puts scp.upload! f,File.basename(f)
-    }
+    conf_file ="root/nlsr-#{vnode}.conf"
+    puts "uploading #{File.basename(conf_file)} to node: #{node_name}"
+    puts scp.upload! conf_file,File.basename(conf_file)
   end
 end
 
