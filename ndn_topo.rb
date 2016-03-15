@@ -106,8 +106,8 @@ topo.keys.each do |vnode|
     conf = `ls root/nlsr-*.conf`.split("\n")
     conf.push("root/nlsr-start.sh")
     conf.each{ |f|
-      puts "uploading #{f} to node: #{node_name}"
-      puts scp.upload "/#{f}"
+      puts "uploading #{File.basename(f)} to node: #{node_name}"
+      puts scp.upload! f,File.basename(f)
     }
   end
 end
