@@ -96,10 +96,22 @@ end
 puts "taktuk"
 # p expState['vnodesName']
 
-sleep 2
+handler = Proc.new do |server|
+
+  server[:connection_attempts] ||= 0
+  if server[:connection_attempts] < 40
+    server[:connection_attempts] += 1
+    puts "Retrying connection"
+    sleep 5
+    throw :go, :retry
+  else
+    throw :go, :raise
+  end
+end
+
 
 # Testing connection
-Net::SSH::Multi.start do |session|
+Net::SSH::Multi.start(:on_error => handler) do |session|
    session.group :vnodes do
      topo.keys.each { |vnode| session.use("root@#{vnode}-adm",{:paranoid => false})}
    end
@@ -118,6 +130,7 @@ topo.keys.each do |vnode|
   end
 end
 
+# saving
 
 
 # Cute::TakTuk.start(topo.keys,:connector => 'ssh -o StrictHostKeyChecking=no',:user => 'root') do |tak|
