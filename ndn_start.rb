@@ -1,6 +1,9 @@
+require 'yaml'
 
 # Executing NDN daemons
 topo = (YAML.load(File.open(topoFile,'r') {|f| f.read + "\n---\n"}) || {} )
+hosts = YAML.load(File.open("hosts_helper.yaml",'r') )
+
 
 Net::SSH::Multi.start do |session|
 
@@ -19,13 +22,16 @@ Net::SSH::Multi.start do |session|
      "sleep 2"
   ].each { |x| session.with(:vnodes).exec! x }
 
+
+
 end
 
+# updating hosts file and starting nlsr
 
-puts "ssh"
-
-topo.keys.each do |x|
-  puts "On #{x}"
-  system('ssh',"root@#{x}","echo -e '#{hosts[x]}' | dd of=/etc/hosts")
-  system "ssh root@#{x} screen -d -m /root/nlsr-start.sh"
+topo.keys.each do |vnode|
+  Net::SSH.start("#{vnode}-adm", "root") do |ssh|
+    puts "On #{x}"
+    ssh.exec! "echo -e '#{hosts[x]}' | dd of=/etc/hosts"
+    ssh.exec! "screen -d -m /root/nlsr-start.sh"
+  end
 end
