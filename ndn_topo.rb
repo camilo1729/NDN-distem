@@ -125,12 +125,19 @@ topo.keys.each do |vnode|
   node_name = "#{vnode}-adm"
   Net::SCP.start(node_name,'root') do |scp|
     conf_file ="root/nlsr-#{vnode}.conf"
+    nlsr_start_file = "root/nlsr-start.sh"
     puts "uploading #{File.basename(conf_file)} to node: #{node_name}"
     puts scp.upload! conf_file,File.basename(conf_file)
+    puts scp.upload! nlsr_start_file,File.basename(nlsr_start_file)
   end
 end
 
-# saving
+
+# saving host for /etch/hosts
+
+File.open("hosts_helper.yaml",'w') do |f|
+  f.puts(hosts.to_yaml)
+end
 
 
 # Cute::TakTuk.start(topo.keys,:connector => 'ssh -o StrictHostKeyChecking=no',:user => 'root') do |tak|
