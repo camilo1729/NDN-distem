@@ -1,0 +1,49 @@
+# NDN-distem
+
+* NDN experiments over distem
+
+This is the procedure to follow in order to repeat the experiments in Grid'5000.
+
+First reserve the nodes with destructive option, because we are going to format =/tmp= directory
+for formatining later with =btrfs=:
+
+#+BEGIN_SRC sh
+ $ oarsub -t deploy -t destructive -l slash_22=1+nodes=5,walltime=5:00:00 "sleep 1d"
+#+END_SRC
+
+We need five nodes for deploying the entirerly infrastructure otherwise we will have problems when starting the daemons.
+Deploying environment:
+
+#+BEGIN_SRC sh
+ $ kadeploy3 -f $OAR_NODEFILE -e jessie-x64-nfs -k
+#+END_SRC
+
+Executing debootstrap with btrfs options:
+
+#+BEGIN_SRC sh
+ $ ruby examples/distem-bootstrap -g --debian-version jessie -f /tmp/machinefile --enable-admin-network --btrfs-format /dev/sda5
+#+END_SRC
+
+In the coodirnator nodes, we need to install the following gems:
+
+#+BEGIN_SRC sh
+$ gem install ruby-cute net-scp
+#+END_SRC
+
+Clonning the repository in the coordinator node:
+
+#+BEGIN_SRC sh
+$ git clone https://github.com/camilo1729/NDN-distem.git
+#+END_SRC
+
+Create the file =exp.state.yaml= with the names of all physical machines that are running Ditem
+
+#+BEGIN_SRC sh
+$ ruby ndn_topo.rb exp.state.yaml fai1.yaml
+#+END_SRC
+
+And then start the NDN daemons:
+
+#+BEGIN_SRC sh
+$ ruby ndn_start.rb fai1.yaml
+#+END_SRC
