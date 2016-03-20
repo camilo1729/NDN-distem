@@ -7,7 +7,7 @@ require 'ipaddr'
 require 'net/scp'
 load 'nlsrcGen.rb'
 
-FSIMG="/home/cruizsanabria/distemIMGjessieNLSR3bis.tar.gz"
+FSIMG="/home/cruizsanabria/jessie-ndn-lxc.tar.gz"
 
 stateFile=ARGV[0]
 topoFile=ARGV[1]
