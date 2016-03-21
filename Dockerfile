@@ -1,7 +1,7 @@
 FROM debian:jessie
 RUN apt-get -y update && apt-get install -y g++ make taktuk openssh-server libc6-dev-i386 devscripts build-essential git pkg-config
 RUN apt-get install -y wget libsqlite3-dev libcrypto++-dev libboost-all-dev
-RUN apt-get install -y libpcap-dev libcap2-bin screen liblog4cxx10-dev libprotobuf-dev protobuf-compiler libssl-dev
+RUN apt-get install -y libpcap-dev libcap2-bin screen liblog4cxx10-dev libprotobuf-dev protobuf-compiler libssl-dev screen
 
 # Install NDN
 

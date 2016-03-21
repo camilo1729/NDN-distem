@@ -116,6 +116,8 @@ Net::SSH::Multi.start(:on_error => handler) do |session|
      topo.keys.each { |vnode| session.use("root@#{vnode}-adm",{:paranoid => false})}
    end
    puts session.with(:vnodes).exec "hostname"
+   # updating library path
+   puts session.with(:vnodes).exec "ldconfig"
 end
 
 
