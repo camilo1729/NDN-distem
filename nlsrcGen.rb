@@ -6,8 +6,8 @@ general
 {
   ; mandatory configuration command section network, site and router
 
-  network #{hash['net']}         ; name of the network the router belongs to in ndn URI format
-  site #{hash['site']}    ; name of the site the router belongs to in ndn URI format
+  network /ndn/        ; name of the network the router belongs to in ndn URI format
+  site #{hash['net']}#{hash['site']}    ; name of the site the router belongs to in ndn URI format
   router #{hash['router']}    ; name of the router in ndn URI format
 
   ; lsa-refresh-time is the time in seconds, after which router will refresh its LSAs
@@ -69,7 +69,7 @@ neighbors
 
   ; neighbor command is used to configure router's neighbor. Each neighbor will need
   ; one block of neighbor command
-  #{ hash['neighs'].reduce("") {|acc,x| acc + "\n  neighbor\n  {\n   name #{others[x]['net']}#{others[x]['site']}#{others[x]['router']}\n   face-uri udp://#{x}\n   link-cost 25\n  }"}
+  #{ hash['neighs'].reduce("") {|acc,x| acc + "\n  neighbor\n  {\n   name /ndn#{others[x]['net']}#{others[x]['site']}#{others[x]['router']}\n   face-uri udp://#{x}\n   link-cost 25\n  }"}
    }
  
 
@@ -118,7 +118,7 @@ advertising
   ; the ndnname is used to advertised name from the router. To advertise each name prefix
   ; configure one block of ndnname configuration command for every name prefix.
 
-  #{hash['announce'].reduce("") { |acc,x| acc + "\n  prefix #{x}" } } 
+  #{hash['announce'].reduce("") { |acc,x| acc + "\n  prefix /ndn#{x}" } } 
 }
 
 security
