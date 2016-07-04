@@ -1,0 +1,59 @@
+n0:
+  router: /router
+  site: /core
+  net: /n-0
+  neighs:
+  - n1
+  - n2
+  - n0-0
+  announce:
+  - /netAnnounce0
+
+n0-0:
+  router: /r-0
+  site: /s-0
+  net: /n-0
+  neighs:
+  - n0
+  announce:
+  - /nodeAnnounce0x0
+
+n1:
+  router: /router
+  site: /core
+  net: /n-1
+  neighs:
+  - n2
+  - n0
+  - n1-0
+  announce:
+  - /netAnnounce1
+
+n1-0:
+  router: /r-0
+  site: /s-0
+  net: /n-1
+  neighs:
+  - n1
+  announce:
+  - /nodeAnnounce1x0
+
+n2:
+  router: /router
+  site: /core
+  net: /n-2
+  neighs:
+  - n0
+  - n1
+  - n2-0
+  announce:
+  - /netAnnounce2
+
+n2-0:
+  router: /r-0
+  site: /s-0
+  net: /n-2
+  neighs:
+  - n2
+  announce:
+  - /nodeAnnounce2x0
