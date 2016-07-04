@@ -54,3 +54,57 @@ And then start the NDN daemons:
 #+BEGIN_SRC sh
 $ ruby ndn_start.rb fai1.yaml
 #+END_SRC
+
+* MAX_NDN_PACKET_SIZE bug
+
+We downloa the header to modify the variable =MAX_NDN_PACKET_SIZE=
+
+#+BEGIN_SRC sh
+$ wget  https://raw.githubusercontent.com/named-data/ndn-cxx/4b4f754fbd1b79097c012d181b903b80397273b4/src/encoding/tlv.hpp
+#+END_SRC
+
+We can reuse the aformentioned topologies  but instead on using =ndn_topo.rb=, we use =ndn_topo_datamax.rb=
+
+#+BEGIN_SRC sh
+$ ruby ndn_topo_datamax.rb exp.state.yaml fai1.yaml
+#+END_SRC
+
+
+* Routing and Cache experiments
+
+We will create a simple topology a dandelion 3-1  to test the NDN cache and NDN routing.
+
+#+BEGIN_SRC sh
+$ ruby ndn_topo.rb exp.state.yaml small_topo.yml
+#+END_SRC
+
+
+** Procedure for testin ping
+
+Modify the file
+
+#+BEGIN_SRC sh
+
+$ cd ndn-cxx
+
+$ vim examples/producer.cpp
+
+#+END_SRC
+
+we compile then
+
+#+BEGIN_SRC sh
+  ./waf configure --with-examples
+  ./waf
+  build/examples/producer &
+#+END_SRC
+
+You have to put the configured announced for the node for this case it will be =/ndn/nodeAnnounce1x0/testApp=,
+then in the other machine you do a ndnping:
+
+#+BEGIN_SRC
+ndnping /ndn/nodeAnnounce1x0/testApp
+
+#+END_SRC
+
+You should be able to ping the machine.
