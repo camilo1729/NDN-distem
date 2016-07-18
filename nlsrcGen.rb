@@ -69,9 +69,14 @@ neighbors
 
   ; neighbor command is used to configure router's neighbor. Each neighbor will need
   ; one block of neighbor command
-  #{ hash['neighs'].reduce("") {|acc,x| acc + "\n  neighbor\n  {\n   name /ndn#{others[x]['net']}#{others[x]['site']}#{others[x]['router']}\n   face-uri udp://#{x}\n   link-cost 25\n  }"}
-   }
- 
+  #{ hash['neighs'].reduce("") do
+    |acc,x|
+    name = x.is_a?(Hash)? x.keys.first : x
+    cost = x.is_a?(Hash)? x.values.first : "25"
+    acc + "\n  neighbor\n  {\n   name /ndn#{others[name]['net']}#{others[name]['site']}#{others[name]['router']}\n   face-uri udp://#{name}\n   link-cost #{cost}\n  }"
+  end
+}
+
 
 }
 
@@ -118,7 +123,7 @@ advertising
   ; the ndnname is used to advertised name from the router. To advertise each name prefix
   ; configure one block of ndnname configuration command for every name prefix.
 
-  #{hash['announce'].reduce("") { |acc,x| acc + "\n  prefix /ndn#{x}" } } 
+  #{hash['announce'].reduce("") { |acc,x| acc + "\n  prefix /ndn#{x}" } }
 }
 
 security
