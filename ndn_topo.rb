@@ -61,10 +61,11 @@ Distem.client do |cl|
     cl.vfilesystem_create(name,  { 'image' => "file://#{FSIMG}" , :cow => true})
    # cl.viface_create(name, "all0", { 'vnetwork' => 'netall'})
     h['neighs'].each do |n|
-      if n <= name
+      n_name = n.is_a?(Hash)? n.keys.first : n
+      if n_name <= name
       then
         puts ip
-        cl.vnetwork_create("#{n}-#{name}", "#{ip.to_s}/27")
+        cl.vnetwork_create("#{n_name}-#{name}", "#{ip.to_s}/27")
         32.times { ip = ip.succ}
       else nil
       end
@@ -73,11 +74,12 @@ Distem.client do |cl|
 
   topo.each_pair do |name,h|
     h['neighs'].each do |n|
-      inf = n <= name
-      res = cl.viface_create(name, "#{n}#{name}",
-                             { 'vnetwork' => "#{ ((inf) ? n : name)}-#{ ((inf) ? name : n)}" })
+      n_name = n.is_a?(Hash)? n.keys.first : n
+      inf = n_name <= name
+      res = cl.viface_create(name, "#{n_name}#{name}",
+                             { 'vnetwork' => "#{ ((inf) ? n_name : name)}-#{ ((inf) ? name : n_name)}" })
       addr = res['address'].split('/').first
-      hosts[n] << [addr,name]
+      hosts[n_name] << [addr,name]
     end
   end
 
