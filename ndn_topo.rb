@@ -3,7 +3,8 @@
 require 'distem'
 require 'yaml'
 require 'cute'
-require 'ipaddr'
+require 'ipaddress'
+
 require 'net/scp'
 load 'nlsrcGen.rb'
 
@@ -48,8 +49,9 @@ Distem.client do |cl|
   i=0
   j=1
   #cl.vnetwork_create("netall","18.0.0.0/24")
-  ip = IPAddr.new (expState['addr'])
-  ip = ip.mask 16
+  net = IPAddress::IPv4.new(expState['addr'])
+  iplist = net.map{ |ip| ip.to_string }
+  cont_ip = 1
   topo.each_pair do |name,h|
     if j < vNodesPerLessChargedPnodes + (i < nbrOfOverChargedPnodes ? 1 : 0)
     then j += 1
@@ -64,9 +66,10 @@ Distem.client do |cl|
       n_name = n.is_a?(Hash)? n.keys.first : n
       if n_name <= name
       then
+        ip = iptlis[cont_ip]
         puts ip
         cl.vnetwork_create("#{n_name}-#{name}", "#{ip.to_s}/27")
-        32.times { ip = ip.succ}
+        ip+=32
       else nil
       end
     end

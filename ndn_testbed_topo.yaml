@@ -141,6 +141,7 @@ tongji:
   - anyang: 22
   - waseda: 98
   - caida: 93
+  - bupt: 18
   announce:
   - /nodeAnnouncetongji
 
@@ -228,6 +229,7 @@ ua:
   - csu: 18
   - wu: 33
   - um: 17
+  - remap: 25
   announce:
   - /nodeAnnounceua
 
