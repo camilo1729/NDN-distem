@@ -1,0 +1,272 @@
+pku:
+  router: /router
+  site: /core
+  net: /pku
+  neighs:
+  - basel: 127
+  - neu: 112
+  - ucla: 85
+  - anyang: 38
+  - tongji: 54
+  - bupt: 14
+  announce:
+  - /netAnnouncepku
+
+basel:
+  router: /router
+  site: /core
+  net: /basel
+  neighs:
+  - systemx: 10
+  - orange1: 18
+  - lip6: 18
+  - urjc: 69
+  - pku: 127
+  announce:
+  - /nodeAnnouncebasel
+
+byu:
+  router: /router
+  site: /core
+  net: /byu
+  neighs:
+  - remap: 9
+  - ua: 30
+  - csu: 8
+  announce:
+  - /netAnnouncebyu
+
+neu:
+  router: /router
+  site: /core
+  net: /neu
+  neighs:
+  - mich: 14
+  - um: 21
+  - pku: 112
+  announce:
+  - /nodeAnnounceneu
+
+bupt:
+  router: /router
+  site: /core
+  net: /bupt
+  neighs:
+  - pku: 14
+  - anyang: 33
+  - tongji: 18
+  - waseda: 48
+  announce:
+  - /netAnnouncebupt
+
+csu:
+  router: /router
+  site: /core
+  net: /csu
+  neighs:
+  - ucla: 16
+  - remap: 16
+  - byu: 8
+  - mich: 15
+  - uiuc: 14
+  - ua: 18
+  announce:
+  - /nodeAnnouncecsu
+
+mich:
+  router: /router
+  site: /core
+  net: /mich
+  neighs:
+  - neu: 14
+  - csu: 15
+  - um: 12
+  - lib6: 69
+  announce:
+  - /nodeAnnouncemich
+
+systemx:
+  router: /router
+  site: /core
+  net: /systemx
+  neighs:
+  - basel: 10
+  - lip6: 2
+  - orange1: 2
+  announce:
+  - /nodeAnnouncesystemx
+
+anyang:
+  router: /router
+  site: /core
+  net: /anyang
+  neighs:
+  - pku: 38
+  - bupt: 33
+  - tongji: 22
+  - waseda: 3
+  announce:
+  - /nodeAnnounceanyang
+
+ucla:
+  router: /router
+  site: /core
+  net: /ucla
+  neighs:
+  - pku: 85
+  - caida: 3
+  - uci: 1
+  - remap: 1
+  - csu: 16
+  announce:
+  - /nodeAnnounceucla
+
+uiuc:
+  router: /router
+  site: /core
+  net: /uicu
+  neighs:
+  - csu: 14
+  - mich: 15
+  - wu: 9
+  announce:
+  - /nodeAnnounceuiuc
+
+tongji:
+  router: /router
+  site: /core
+  net: /tongji
+  neighs:
+  - pku: 54
+  - anyang: 22
+  - waseda: 98
+  - caida: 93
+  announce:
+  - /nodeAnnouncetongji
+
+remap:
+  router: /router
+  site: /core
+  net: /remap
+  neighs:
+  - ucla: 1
+  - uci: 1
+  - byu: 9
+  - csu: 16
+  - ua: 25
+  announce:
+  - /nodeAnnounceremap
+
+lip6:
+  router: /router
+  site: /core
+  net: /lip6
+  neighs:
+  - mich: 69
+  - urjc: 15
+  - basel: 18
+  - systemx: 2
+  - orange1: 3
+  announce:
+  - /nodeAnnouncelip6
+
+wu:
+  router: /router
+  site: /core
+  net: /wu
+  neighs:
+  - uiuc: 9
+  - ua: 33
+  - um: 17
+  - urjc: 86
+  announce:
+  - /nodeAnnouncewu
+
+urjc:
+  router: /router
+  site: /core
+  net: /urjc
+  neighs:
+  - wu: 86
+  - basel: 69
+  - lip6: 15
+  - orange1: 15
+  announce:
+  - /nodeAnnounceurjc
+
+uci:
+  router: /router
+  site: /core
+  net: /uci
+  neighs:
+  - ucla: 1
+  - remap: 1
+  - caida: 3
+  announce:
+  - /nodeAnnounceuci
+
+caida:
+  router: /router
+  site: /core
+  net: /caida
+  neighs:
+  - tongji: 93
+  - ucla: 3
+  - uci: 3
+  - ua: 25
+  announce:
+  - /nodeAnnouncecaida
+
+ua:
+  router: /router
+  site: /core
+  net: /ua
+  neighs:
+  - caida: 25
+  - waseda: 75
+  - byu: 30
+  - csu: 18
+  - wu: 33
+  - um: 17
+  announce:
+  - /nodeAnnounceua
+
+um:
+  router: /router
+  site: /core
+  net: /um
+  neighs:
+  - ua: 17
+  - wu: 17
+  - mich: 12
+  - neu: 21
+  - orange1: 56
+  announce:
+  - /nodeAnnounceum
+
+orange1:
+  router: /router
+  site: /core
+  net: /orange1
+  neighs:
+  - waseda: 144
+  - um: 56
+  - urjc: 15
+  - lip6: 3
+  - basel: 18
+  - systemx: 2
+  announce:
+  - /nodeAnnounceorange1
+
+waseda:
+  router: /router
+  site: /core
+  net: /waseda
+  neighs:
+  - bupt: 48
+  - tongji: 98
+  - anyang: 3
+  - ua: 75
+  - orange1: 144
+  announce:
+  - /nodeAnnouncewaseda
