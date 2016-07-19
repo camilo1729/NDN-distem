@@ -25,6 +25,7 @@ Executing debootstrap with btrfs options:
  $ distem-bootstrap -g --debian-version jessie -f /tmp/machinefile --enable-admin-network --btrfs-format /dev/sda5
 #+END_SRC
 
+Sometimes, it is useful to add the parameter =--max-vifaces 1024= to able able to create more vnodes per physical machine.
 In the coordinator node, we need to install the following gems:
 
 #+BEGIN_SRC sh
