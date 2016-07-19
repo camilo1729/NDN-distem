@@ -50,7 +50,7 @@ Distem.client do |cl|
   j=1
   #cl.vnetwork_create("netall","18.0.0.0/24")
   net = IPAddress::IPv4.new(expState['addr'])
-  iplist = net.map{ |ip| ip.to_string }
+  iplist = net.map{ |ip| ip.to_s }
   cont_ip = 1
   topo.each_pair do |name,h|
     if j < vNodesPerLessChargedPnodes + (i < nbrOfOverChargedPnodes ? 1 : 0)
