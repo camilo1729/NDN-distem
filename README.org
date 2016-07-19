@@ -7,7 +7,7 @@ This is the procedure to follow in order to repeat the experiments in Grid'5000.
 First reserve the nodes with destructive option, because we are going to format =/tmp= directory with =btrfs=:
 
 #+BEGIN_SRC sh
- $ oarsub -t deploy -t destructive -l slash_22=1+nodes=5,walltime=5:00:00 "sleep 1d"
+ $ oarsub -t deploy -t destructive -l slash_18=1+nodes=5,walltime=5:00:00 "sleep 1d"
 #+END_SRC
 
 We need 4 nodes for deploying =fai1= and 5 nodes for deploying =fai2=.

@@ -66,10 +66,10 @@ Distem.client do |cl|
       n_name = n.is_a?(Hash)? n.keys.first : n
       if n_name <= name
       then
-        ip = iptlis[cont_ip]
+        ip = iplist[cont_ip]
         puts ip
         cl.vnetwork_create("#{n_name}-#{name}", "#{ip.to_s}/27")
-        ip+=32
+        cont_ip+=32
       else nil
       end
     end
