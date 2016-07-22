@@ -80,7 +80,7 @@ $ ruby ndn_topo.rb exp.state.yaml small_topo.yml
 #+END_SRC
 
 
-** Procedure for testin ping
+** Procedure for testing ping
 
 Modify the file
 
@@ -109,3 +109,26 @@ ndnping /ndn/nodeAnnounce1x0/testApp
 #+END_SRC
 
 You should be able to ping the machine.
+** Procedure for testing cache with file transmission
+
+We can use the application =ndncatchunks=. So we push a file in one node with the following command:
+
+#+BEGIN_SRC sh
+
+# we create first a text file
+# This is a 96 MB file
+yes | tr \\n x | head -c 100000000 > test_file.txt
+
+ndnputchunks -f 100000 /ndn/nodeAnnounce0x0x0/bigfile < test_file.txt
+
+#+END_SRC
+
+
+Then, in the other nodes we perform:
+
+#+BEGIN_SRC sh
+
+time ndncatchunks  -l 10 -d iterative /ndn/nodeAnnounce0x0x0/bigfile > download
+#+END_SRC
+
+Here, we meausered the time to download.
