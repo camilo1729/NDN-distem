@@ -10,7 +10,7 @@ pku:
   - tongji: 54
   - bupt: 14
   announce:
-  - /netAnnouncepku
+  - /nodeAnnouncepku
 
 basel:
   router: /router
@@ -34,7 +34,7 @@ byu:
   - ua: 30
   - csu: 8
   announce:
-  - /netAnnouncebyu
+  - /nodeAnnouncebyu
 
 neu:
   router: /router
@@ -57,7 +57,7 @@ bupt:
   - tongji: 18
   - waseda: 48
   announce:
-  - /netAnnouncebupt
+  - /nodeAnnouncebupt
 
 csu:
   router: /router
