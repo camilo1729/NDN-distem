@@ -146,6 +146,9 @@ File.open("hosts_helper.yaml",'w') do |f|
   f.puts(hosts.to_yaml)
 end
 
+File.open("machinefile.txt", 'w') do |f|
+  topo.keys.each { |vnode|  f.puts vnode}
+end
 
 # Cute::TakTuk.start(topo.keys,:connector => 'ssh -o StrictHostKeyChecking=no',:user => 'root') do |tak|
 
