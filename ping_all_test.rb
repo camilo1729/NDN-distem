@@ -7,27 +7,35 @@ require 'cute'
 nodes = []
 
 
-File.open("machine_file", "r").each_line do |line|
+File.open("machinefile.txt", "r").each_line do |line|
   nodes.push(line.chop)
 end
 
+
+#nodes.delete("uiuc")
+
 # Initializing ping server
+
 nodes.each do |vnode|
   Net::SSH.start("#{vnode}-adm", "root") do |ssh|
     puts "On #{vnode}"
-    ssh.exec! "nohup ndnpingserver /ndn/netAnnounce#{vnode}"
+    ssh.exec "screen -d -m ndnpingserver /ndn/nodeAnnounce#{vnode}"
+
   end
 
 end
 
+
+results = {}
 Net::SSH::Multi.start do |session|
   session.group :producer do
-    nodes.each{ |node| session.use(node,{:user => "root",:paranoid => false})}
+    nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
   end
 
-
-  results = session.exec! "ndnping -c 100 /ndn/netAnnounce#{nodes.first}"
-
+#  nodes.each do |node|
+#  results[node] = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
+  results = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
+#  end
 end
 
 

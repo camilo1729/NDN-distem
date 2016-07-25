@@ -149,15 +149,3 @@ end
 File.open("machinefile.txt", 'w') do |f|
   topo.keys.each { |vnode|  f.puts vnode}
 end
-
-# Cute::TakTuk.start(topo.keys,:connector => 'ssh -o StrictHostKeyChecking=no',:user => 'root') do |tak|
-
-#   [
-#     "'nohup nfd-start < /dev/null >>./log 2>>./log'",
-#     "'mkdir -p /var/log/nlsr'",
-#     "'mkdir -p /var/lib/nlsr'",
-#     "'sh -c \"nohup nlsr -f nlsr-`uname -n`.conf -d\"'",
-#   ].each { |x| prettyPrint(tak.exec!(x))}
-
-
-# end
