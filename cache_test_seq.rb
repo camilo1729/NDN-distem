@@ -31,20 +31,17 @@ end
 
 sleep 100
 
-results = {}
-Net::SSH::Multi.start do |session|
-  session.group :producer do
-    nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
-  end
+nodes_to_test = ["n0-0-1","n0-0-2","n0-0-3","n1-0-0","n1-0-1","n1-0-2","n1-0-3","n2-0-0","n2-0-1","n2-0-2","n2-0-3","n3-0-0","n3-0-1","n3-0-2","n3-0-3"]
+
+
+nodes_to_test.each do |vnode|
+
+  Net::SSH.start("#{vnode}-adm", "root") do |ssh|
 
 #  nodes.each do |node|
 #  results[node] = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
   # we setup latencies of 10ms so we have to augment the -l parameter
-  results = session.exec! "time ndncatchunks  -l 100 -d iterative /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
+   puts ssh.exec "time ndncatchunks  -l 100 -d iterative /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
 #  end
-end
-
-
-File.open("results_ping",'w') do |f|
-  f.puts(results.to_yaml)
+  end
 end
