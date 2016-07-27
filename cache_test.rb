@@ -20,8 +20,10 @@ FILE_TEST = "bigfile"
 
 Net::SSH.start("n0-0-0-adm", "root") do |ssh|
   puts "On n0-0-0"
-  ssh.exec "yes | tr \\n x | head -c 100000000 > test_file.txt"
-  ssh.exec "screen -d -m ndnputchunks -f 100000 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} < test_file.txt"
+  ## 20 MB file
+  ssh.exec "yes | tr \\n x | head -c 20000000 > test_file.txt"
+  sss.exec "echo ' ndnputchunks -f 100000 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} < test_file.txt' > script.sh"
+  ssh.exec "screen -d -m bash script.sh"
 end
 
 
@@ -35,7 +37,8 @@ Net::SSH::Multi.start do |session|
 
 #  nodes.each do |node|
 #  results[node] = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
-  results = session.exec! "time ndncatchunks  -l 10 -d iterative /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
+  # we setup latencies of 10ms so we have to augment the -l parameter
+  results = session.exec! "time ndncatchunks  -l 100 -d iterative /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
 #  end
 end
 
