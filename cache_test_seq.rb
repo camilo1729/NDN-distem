@@ -37,7 +37,7 @@ nodes_to_test = ["n0-0-1","n0-0-2","n0-0-3","n1-0-0","n1-0-1","n1-0-2","n1-0-3",
 nodes_to_test.each do |vnode|
 
   Net::SSH.start("#{vnode}-adm", "root") do |ssh|
-
+    puts "Get on node: #{vnode}"
 #  nodes.each do |node|
 #  results[node] = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
   # we setup latencies of 10ms so we have to augment the -l parameter
