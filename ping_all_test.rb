@@ -16,29 +16,16 @@ end
 
 # Initializing ping server
 
-nodes.each do |vnode|
-  Net::SSH.start("#{vnode}-adm", "root") do |ssh|
-    puts "On #{vnode}"
-    ssh.exec "screen -d -m ndnpingserver /ndn/nodeAnnounce#{vnode}"
-
-  end
-
-end
-
 
 results = {}
 Net::SSH::Multi.start do |session|
-  session.group :producer do
+
+  session.group :vnodes do
     nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
   end
 
-#  nodes.each do |node|
-#  results[node] = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
-  results = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
-#  end
-end
+  nodes.each do |node|
+    session.with(:vnodes).exec! "nohup ndnping -c 100 /ndn/nodeAnnounce#{node} > #{node}.txt &"
+  end
 
-
-File.open("results_ping",'w') do |f|
-  f.puts(results.to_yaml)
 end

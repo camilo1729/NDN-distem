@@ -128,7 +128,9 @@ Then, in the other nodes we perform:
 
 #+BEGIN_SRC sh
 
-time ndncatchunks  -l 10 -d iterative /ndn/nodeAnnounce0x0x0/bigfile > download
+time ndncatchunks  -l 10 -d iterative -p 20 /ndn/nodeAnnounce0x0x0/bigfile > download
 #+END_SRC
+We have to use the parameter -p to increase the pipeline and optimize the download time.
+Values more than 20 cause some problem for downloading the file.
 
 Here, we meausered the time to download.
