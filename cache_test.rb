@@ -40,7 +40,7 @@ Net::SSH::Multi.start do |session|
 #  nodes.each do |node|
 #  results[node] = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
   # we setup latencies of 10ms so we have to augment the -l parameter
-  results = session.exec! "time ndncatchunks  -l 100 -d iterative /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
+  results = session.exec! "time ndncatchunks  -l 100 -d iterative -p 20 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
 #  end
 end
 
