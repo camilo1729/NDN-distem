@@ -29,3 +29,24 @@ Net::SSH::Multi.start do |session|
   end
 
 end
+
+
+sleep 200
+
+node_delete = "uiuc"
+nodes.delete(node_delete)
+
+`mkdir -p results_#{node_delete}`
+
+nodes.each do |vnode|
+
+  dir_node = "results_#{node_delete}/#{vnode}"
+  `mkdir -p #{dir_node}`
+  `scp #{vnode}-adm:~/*.txt #{dir_node}/`
+
+  Net::SSH.start("#{vnode}-adm", "root") do |ssh|
+    puts "Deleting files On #{vnode}"
+    ssh.exec "rm *.txt"
+  end
+
+end
