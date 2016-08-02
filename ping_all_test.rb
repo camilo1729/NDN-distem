@@ -19,10 +19,13 @@ Distem.client do |cl|
 
   nodes.each do |node_to_kill|
 
+    puts "Stopping NDN daemons"
     `ruby ndn_stop.rb ndn_testbed_topo.yaml`
     sleep 2
+    puts "Restarting NDN daemons"
     `ruby ndn_start.rb  ndn_testbed_topo.yaml`
     sleep 10
+    puts "Initializing ping servers"
     `ruby initialize_ping_server.rb`
 
   # checking that all the servers have been initiazlied
