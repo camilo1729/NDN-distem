@@ -27,21 +27,23 @@ Distem.client do |cl|
 
   # checking that all the servers have been initiazlied
 
-    num_server = `ps aux | grep ndnping | wc -l `.chop
-
-    puts "Number of ping servers running #{num_server}"
-
-    if num_server != "46"
-      puts "problemm initializing exiting"
-      exit
-    end
-
     results = {}
     Net::SSH::Multi.start do |session|
 
       session.group :vnodes do
         nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
       end
+
+
+      num_servers = session.with(:vnodes).exec! "ps aux | grep ndnpingserver | wc -l"
+
+      ill_behaved = num_servers.select{ |k,v| v[:status] != 0 }
+
+      unless ill_behaved.empty?
+          puts "problemm initializing ping servers exiting"
+          exit
+      end
+
 
       nodes.each do |node|
         session.with(:vnodes).exec! "nohup ndnping -c 200 /ndn/nodeAnnounce#{node} > #{node}.txt &"
@@ -74,15 +76,24 @@ Distem.client do |cl|
 
     end
 
-    num_server = `ps aux | grep ndnping | wc -l `.chop
 
-    puts "Number of ping servers running #{num_server}"
+    # Checking again the ping server to validate the results
+    Net::SSH::Multi.start do |session|
 
-    if num_server != "46"
-      puts "problemm number of ping server results are probably false repeat the measure with node: #{node_to_kill}"
-      exit
+      session.group :vnodes do
+        nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
+      end
+
+      num_servers = session.with(:vnodes).exec! "ps aux | grep ndnpingserver | wc -l"
+
+      ill_behaved = num_servers.select{ |k,v| v[:status] != 0 }
+
+      unless ill_behaved.empty?
+        puts "problemm number of ping server results are probably false repeat the measure with node: #{node_to_kill}"
+        exit
+      end
+
     end
-
 
     puts "Restarting node: #{node_to_kill}"
     cl.vnode_start(node_to_kill)
