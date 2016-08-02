@@ -84,7 +84,7 @@ Distem.client do |cl|
     Net::SSH::Multi.start do |session|
 
       session.group :vnodes do
-        nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
+        temp_nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
       end
 
       num_servers = session.with(:vnodes).exec! "ps aux | grep ndnpingserver | wc -l"
