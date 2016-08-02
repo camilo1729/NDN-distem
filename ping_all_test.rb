@@ -27,9 +27,11 @@ Distem.client do |cl|
 
   # checking that all the servers have been initiazlied
 
-    num_server = "ps aux | grep ndnping | wc -l ".chop
+    num_server = `ps aux | grep ndnping | wc -l `.chop
 
-    if num_server != "45"
+    puts "Number of ping servers running #{num_server}"
+
+    if num_server != "46"
       puts "problemm initializing exiting"
       exit
     end
@@ -71,6 +73,16 @@ Distem.client do |cl|
       end
 
     end
+
+    num_server = `ps aux | grep ndnping | wc -l `.chop
+
+    puts "Number of ping servers running #{num_server}"
+
+    if num_server != "46"
+      puts "problemm number of ping server results are probably false repeat the measure with node: #{node_to_kill}"
+      exit
+    end
+
 
     puts "Restarting node: #{node_to_kill}"
     cl.vnode_start(node_to_kill)
