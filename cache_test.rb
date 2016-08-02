@@ -37,14 +37,12 @@ Net::SSH::Multi.start do |session|
     nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
   end
 
-#  nodes.each do |node|
-#  results[node] = session.exec! "ndnping -c 100 /ndn/nodeAnnounce#{nodes[2]}"
   # we setup latencies of 10ms so we have to augment the -l parameter
   results = session.exec! "time ndncatchunks  -l 100 -d iterative -p 20 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
 #  end
 end
 
 
-File.open("results_ping",'w') do |f|
+File.open("results_cache",'w') do |f|
   f.puts(results.to_yaml)
 end
