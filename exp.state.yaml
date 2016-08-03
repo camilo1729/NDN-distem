@@ -6,7 +6,7 @@ nodes:
 - graphene-47.nancy.grid5000.fr
 - graphene-49.nancy.grid5000.fr
 - graphene-105.nancy.grid5000.fr
-:descr:
+descr:
   pnodes: 4
   site: nancy
   time: '03:00:00'

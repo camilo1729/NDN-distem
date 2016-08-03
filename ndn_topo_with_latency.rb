@@ -14,7 +14,7 @@ stateFile=ARGV[0]
 topoFile=ARGV[1]
 expState = (YAML.load(File.open(stateFile,'a+') {|f| f.read + "\n---\n"}) || {} )
 topo = (YAML.load(File.open(topoFile,'r') {|f| f.read + "\n---\n"}) || {} )
-expDescr = expState[:descr]
+expDescr = expState['descr']
 #expDescr = {'pnodes' => 1}
 #expState = { 'nodes' => ['graphene-6']}
 vnodesNbr = topo.length
@@ -46,20 +46,17 @@ Distem.client do |cl|
   puts 'Creating virtual nodes'
   nbrOfOverChargedPnodes = vnodesNbr.modulo(expDescr['pnodes'])
   vNodesPerLessChargedPnodes = vnodesNbr/expDescr['pnodes']
-  i=0
-  j=1
+  count = 0
   #cl.vnetwork_create("netall","18.0.0.0/24")
   net = IPAddress::IPv4.new(expState['addr'])
   iplist = net.map{ |ip| ip.to_s }
   cont_ip = 1
   topo.each_pair do |name,h|
-    if j < vNodesPerLessChargedPnodes + (i < nbrOfOverChargedPnodes ? 1 : 0)
-    then j += 1
-    else j=1; i += 1
-    end
+    pnode = expState['nodes'][count.modulo(num_ponodes)]
+    count+=1
     puts name
-    puts expState['nodes'][i]
-    cl.vnode_create(name, { 'host' => expState['nodes'][i] },  sshkeys)
+    puts pnode
+    cl.vnode_create(name, { 'host' => pnode },  sshkeys)
     cl.vfilesystem_create(name,  { 'image' => "file://#{FSIMG}" , :cow => true})
    # cl.viface_create(name, "all0", { 'vnetwork' => 'netall'})
     h['neighs'].each do |n|
