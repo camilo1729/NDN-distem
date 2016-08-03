@@ -38,7 +38,13 @@ Distem.client do |cl|
       end
 
 
-      num_servers = session.with(:vnodes).exec! "ps aux | grep ndnpingserver | wc -l"
+      nodes.each do |node|
+        session.with(:vnodes).exec! "nohup ndnping -c 200 /ndn/nodeAnnounce#{node} > #{node}.txt &"
+      end
+
+      # sometimes a  ndnpingserver stop working so we have to wait a little
+      sleep 10
+      num_servers = session.with(:vnodes).exec! "ps cax | grep ndnpingserver"
 
       ill_behaved = num_servers.select{ |k,v| v[:status] != 0 }
 
@@ -47,10 +53,6 @@ Distem.client do |cl|
           exit
       end
 
-
-      nodes.each do |node|
-        session.with(:vnodes).exec! "nohup ndnping -c 200 /ndn/nodeAnnounce#{node} > #{node}.txt &"
-      end
 
     end
 
@@ -87,7 +89,7 @@ Distem.client do |cl|
         temp_nodes.each{ |vnode| session.use("#{vnode}-adm",{:user => "root",:paranoid => false})}
       end
 
-      num_servers = session.with(:vnodes).exec! "ps aux | grep ndnpingserver | wc -l"
+      num_servers = session.with(:vnodes).exec! "ps cax | grep ndnpingserver"
 
       ill_behaved = num_servers.select{ |k,v| v[:status] != 0 }
 
