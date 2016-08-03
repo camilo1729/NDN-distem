@@ -44,15 +44,14 @@ end
 
 Distem.client do |cl|
   puts 'Creating virtual nodes'
-  nbrOfOverChargedPnodes = vnodesNbr.modulo(expDescr['pnodes'])
-  vNodesPerLessChargedPnodes = vnodesNbr/expDescr['pnodes']
+  num_pnodes = expDescr['pnodes']
   count = 0
   #cl.vnetwork_create("netall","18.0.0.0/24")
   net = IPAddress::IPv4.new(expState['addr'])
   iplist = net.map{ |ip| ip.to_s }
   cont_ip = 1
   topo.each_pair do |name,h|
-    pnode = expState['nodes'][count.modulo(num_ponodes)]
+    pnode = expState['nodes'][count.modulo(num_pnodes)]
     count+=1
     puts name
     puts pnode
