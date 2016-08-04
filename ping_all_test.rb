@@ -24,7 +24,7 @@ Distem.client do |cl|
     sleep 2
     puts "Restarting NDN daemons"
     `ruby ndn_start.rb  ndn_testbed_topo.yaml`
-    sleep 10
+    sleep 20 # some machines need that for succesfully initialize all the ndn daemons for example griffon
     puts "Initializing ping servers"
     `ruby initialize_ping_server.rb`
 
