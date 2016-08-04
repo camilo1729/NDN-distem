@@ -1,0 +1,100 @@
+---
+n0-adm:
+  :status: 0
+  :stderr: "real\t0m11.935s\nuser\t0m0.652s\nsys\t0m0.152s"
+n0-0-adm:
+  :stderr: "real\t0m11.543s\nuser\t0m0.672s\nsys\t0m0.152s"
+  :status: 0
+n0-0-0-adm:
+  :stderr: "real\t0m2.248s\nuser\t0m0.516s\nsys\t0m0.212s"
+  :status: 0
+n0-0-1-adm:
+  :stderr: "real\t0m11.563s\nuser\t0m0.644s\nsys\t0m0.184s"
+  :status: 0
+n0-0-2-adm:
+  :stderr: "real\t0m11.547s\nuser\t0m0.656s\nsys\t0m0.168s"
+  :status: 0
+n0-0-3-adm:
+  :stderr: "real\t0m11.552s\nuser\t0m0.708s\nsys\t0m0.128s"
+  :status: 0
+n0-1-adm:
+  :stderr: "real\t0m12.190s\nuser\t0m0.672s\nsys\t0m0.168s"
+  :status: 0
+n0-1-0-adm:
+  :stderr: "real\t0m12.204s\nuser\t0m0.680s\nsys\t0m0.160s"
+  :status: 0
+n0-1-1-adm:
+  :stderr: "real\t0m12.207s\nuser\t0m0.648s\nsys\t0m0.188s"
+  :status: 0
+n0-1-2-adm:
+  :status: 0
+  :stderr: "real\t0m12.200s\nuser\t0m0.704s\nsys\t0m0.148s"
+n0-1-3-adm:
+  :stderr: "real\t0m12.195s\nuser\t0m0.656s\nsys\t0m0.188s"
+  :status: 0
+n1-adm:
+  :status: 0
+  :stderr: "real\t0m11.964s\nuser\t0m0.688s\nsys\t0m0.132s"
+n1-0-adm:
+  :status: 0
+  :stderr: "real\t0m12.024s\nuser\t0m0.656s\nsys\t0m0.164s"
+n1-0-0-adm:
+  :stderr: "real\t0m12.051s\nuser\t0m0.660s\nsys\t0m0.176s"
+  :status: 0
+n1-0-1-adm:
+  :stderr: "real\t0m12.055s\nuser\t0m0.712s\nsys\t0m0.120s"
+  :status: 0
+n1-0-2-adm:
+  :status: 0
+  :stderr: "real\t0m12.049s\nuser\t0m0.636s\nsys\t0m0.200s"
+n1-0-3-adm:
+  :status: 0
+  :stderr: "real\t0m12.062s\nuser\t0m0.688s\nsys\t0m0.156s"
+n1-1-adm:
+  :status: 0
+  :stderr: "real\t0m12.011s\nuser\t0m0.660s\nsys\t0m0.172s"
+n1-1-0-adm:
+  :stderr: "real\t0m12.069s\nuser\t0m0.668s\nsys\t0m0.168s"
+  :status: 0
+n1-1-1-adm:
+  :status: 0
+  :stderr: "real\t0m12.059s\nuser\t0m0.684s\nsys\t0m0.156s"
+n1-1-2-adm:
+  :stderr: "real\t0m12.040s\nuser\t0m0.732s\nsys\t0m0.116s"
+  :status: 0
+n1-1-3-adm:
+  :status: 0
+  :stderr: "real\t0m12.068s\nuser\t0m0.676s\nsys\t0m0.168s"
+n2-adm:
+  :status: 0
+  :stderr: "real\t0m11.948s\nuser\t0m0.648s\nsys\t0m0.184s"
+n2-0-adm:
+  :stderr: "real\t0m12.120s\nuser\t0m0.680s\nsys\t0m0.160s"
+  :status: 0
+n2-0-0-adm:
+  :stderr: "real\t0m12.147s\nuser\t0m0.640s\nsys\t0m0.196s"
+  :status: 0
+n2-0-1-adm:
+  :stderr: "real\t0m12.157s\nuser\t0m0.692s\nsys\t0m0.144s"
+  :status: 0
+n2-0-2-adm:
+  :stderr: "real\t0m12.140s\nuser\t0m0.656s\nsys\t0m0.180s"
+  :status: 0
+n2-0-3-adm:
+  :status: 0
+  :stderr: "real\t0m12.151s\nuser\t0m0.660s\nsys\t0m0.176s"
+n2-1-adm:
+  :stderr: "real\t0m12.118s\nuser\t0m0.680s\nsys\t0m0.152s"
+  :status: 0
+n2-1-0-adm:
+  :stderr: "real\t0m12.161s\nuser\t0m0.680s\nsys\t0m0.160s"
+  :status: 0
+n2-1-1-adm:
+  :stderr: "real\t0m12.166s\nuser\t0m0.684s\nsys\t0m0.156s"
+  :status: 0
+n2-1-2-adm:
+  :status: 0
+  :stderr: "real\t0m12.175s\nuser\t0m0.680s\nsys\t0m0.160s"
+n2-1-3-adm:
+  :stderr: "real\t0m12.169s\nuser\t0m0.656s\nsys\t0m0.184s"
+  :status: 0
