@@ -24,7 +24,7 @@ Net::SSH.start("n0-0-0-adm", "root") do |ssh|
   puts "On n0-0-0"
   file_size = size_in_MB*1000000
   ssh.exec! "yes | tr \\n x | head -c #{file_size} > test_file.txt"
-  sss.exec! "echo ' ndnputchunks -f 100000 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} < test_file.txt' > script.sh"
+  ssh.exec! "echo ' ndnputchunks -f 100000 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} < test_file.txt' > script.sh"
   ssh.exec! "screen -d -m bash script.sh"
 end
 
