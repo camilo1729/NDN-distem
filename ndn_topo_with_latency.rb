@@ -130,9 +130,11 @@ topo.keys.each do |vnode|
   Net::SCP.start(node_name,'root') do |scp|
     conf_file ="root/nlsr-#{vnode}.conf"
     nlsr_start_file = "root/nlsr-start.sh"
+    nfd_conf ="nfd.conf"
     puts "uploading #{File.basename(conf_file)} to node: #{node_name}"
     puts scp.upload! conf_file,File.basename(conf_file)
     puts scp.upload! nlsr_start_file,File.basename(nlsr_start_file)
+    puts scp.upload! nfd_conf,"/usr/local/etc/ndn/nfd.conf"
   end
 end
 
