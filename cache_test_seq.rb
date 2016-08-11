@@ -43,7 +43,7 @@ nodes_to_test.each do |vnode|
   Net::SSH.start("#{vnode}-adm", "root") do |ssh|
     puts "Get on node: #{vnode}"
   # we setup latencies of 10ms so we have to augment the -l parameter
-    puts ssh.exec "time ndncatchunks  -l 100 -d iterative -p 20 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
+    puts ssh.exec! "time ndncatchunks  -l 100 -d iterative -p 20 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
 #  end
   end
 end
