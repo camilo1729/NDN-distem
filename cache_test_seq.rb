@@ -31,8 +31,8 @@ end
 
 # waiting for the file to be available
 
-
-sleep 100
+# value for 600MB file, to change for smaller files
+sleep 400
 
 nodes_to_test = ["n0-0-1","n0-0-2","n0-0-3","n1-0-0","n1-0-1","n1-0-2","n1-0-3","n2-0-0","n2-0-1","n2-0-2","n2-0-3"]
 
@@ -44,7 +44,6 @@ nodes_to_test.each do |vnode|
     puts "Get on node: #{vnode}"
   # we setup latencies of 10ms so we have to augment the -l parameter
     puts ssh.exec! "time ndncatchunks  -l 100 -d iterative -p 20 /ndn/nodeAnnounce0x0x0/#{FILE_TEST} > download"
-#  end
   end
 end
 

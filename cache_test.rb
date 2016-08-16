@@ -29,8 +29,8 @@ end
 
 
 # waiting for the file to be available
-
-sleep 120
+# value for 600MB file, to change for smaller files
+sleep 400
 
 puts "Starting to download file on all nodes"
 results = {}
@@ -52,6 +52,6 @@ Net::SSH.start("n0-0-0-adm", "root") do |ssh|
 end
 
 
-File.open("results_cache",'w') do |f|
+File.open("results_cache#{size_in_MB}MB",'w') do |f|
   f.puts(results.to_yaml)
 end

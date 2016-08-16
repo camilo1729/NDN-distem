@@ -70,7 +70,6 @@ We can reuse the aformentioned topologies  but instead on using =ndn_topo.rb=, w
 $ ruby ndn_topo_datamax.rb exp.state.yaml fai1.yaml
 #+END_SRC
 
-
 * Routing and Cache experiments
 
 We will create a simple topology a dandelion 3-1  to test the NDN cache and NDN routing.
@@ -134,3 +133,62 @@ We have to use the parameter -p to increase the pipeline and optimize the downlo
 Values more than 20 cause some problem for downloading the file.
 
 Here, we meausered the time to download.
+* Ping all experiment
+
+We have to deploy first the NDN testbed topology, we are going to
+use the script which setups an infrastructure with latency by default =10ms=:
+
+#+BEGIN_SRC sh
+$ ruby ndn_topo_with_latency.rb exp.state.yaml ndn_testbed_topo.yaml
+#+END_SRC
+
+After you need to initiazile all the NDN middleware:
+
+#+BEGIN_SRC sh
+$ ruby ndn_start.rb exp.state.yaml ndn_testbed_topo.yaml
+#+END_SRC
+
+and then execute the script of the experiment
+
+#+BEGIN_SRC sh
+$ ruby ping_all_test.rb
+#+END_SRC
+
+
+This will generate several directories with the results of the experiment.
+
+* Cache experiment
+
+Before deploying, we setup the number of CS entries using the file =nfd.conf= by
+changing the value of =cs_max_packets= variable. For the experiments, we use 20 and 262144 as values.
+We have to deploy the fai1 topology which is a dandeleon 3-2-4.
+Similarly, we use the script which setups an infrastructure with latency by default =10ms=:
+
+
+#+BEGIN_SRC sh
+$ ruby ndn_topo_with_latency.rb exp.state.yaml fai1.yaml
+#+END_SRC
+
+You initialize the NDN middleware:
+
+#+BEGIN_SRC sh
+$ ruby ndn_start.rb exp.state.yaml fai1.yaml
+#+END_SRC
+
+Then, we execute the different experiments:
+
+** Cache all
+
+We modify the script =cache_test.rb= with the value of the file size we want to test.
+Then, we execute it as follows:
+
+#+BEGIN_SRC sh
+$ ruby cache_test.rb
+#+END_SRC
+
+** Cache seq
+Similarly we change the value of the file size to test in the file =cache_seq.rb=.
+
+#+BEGIN_SRC sh
+$ ruby cache_seq.rb &> cache_results
+#+END_SRC
