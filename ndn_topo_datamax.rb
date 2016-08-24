@@ -138,10 +138,17 @@ Net::SCP.start(first_node,'root') do |scp|
   puts scp.upload! ndc, "/root/kameleon_workdir/ndn-cxx/src/encoding/tlv.hpp"
 end
 
-puts "Compiling in the first node"
+puts "Compiling ndn-cxx in the first node"
 Net::SSH.start(first_node, 'root') do |ssh|
   ssh.exec! "cd kameleon_workdir/ndn-cxx/ && ./waf configure && ./waf && ./waf install"
 end
+
+puts "Compiling NFD in the first node"
+Net::SSH.start(first_node, 'root') do |ssh|
+  ssh.exec! "cd kameleon_workdir/NFD/ && ./waf configure && ./waf && ./waf install"
+end
+
+
 # Downloading compiled lib from the first node
 
 Net::SCP.start("#{topo.keys.first}-adm",'root') do |scp|
