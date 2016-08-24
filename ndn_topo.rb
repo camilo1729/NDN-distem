@@ -14,7 +14,7 @@ stateFile=ARGV[0]
 topoFile=ARGV[1]
 expState = (YAML.load(File.open(stateFile,'a+') {|f| f.read + "\n---\n"}) || {} )
 topo = (YAML.load(File.open(topoFile,'r') {|f| f.read + "\n---\n"}) || {} )
-expDescr = expState[:descr]
+expDescr = expState["descr"]
 #expDescr = {'pnodes' => 1}
 #expState = { 'nodes' => ['graphene-6']}
 vnodesNbr = topo.length
