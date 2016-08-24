@@ -150,7 +150,7 @@ end
 
 # putting the modified lib in parallel in all nodes
 
-Cute::TakTuk.start(topo.keys, :user => 'root') do |tak|
+Cute::TakTuk.start(topo.keys.map{ |m| "#{m}-adm"}, :user => 'root') do |tak|
   tak.put("libndn-cxx.so.0.4.0", "/usr/local/lib/libndn-cxx.so.0.4.0")
 end
 
