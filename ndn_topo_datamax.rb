@@ -145,20 +145,27 @@ end
 
 puts "Compiling NFD in the first node"
 Net::SSH.start(first_node, 'root') do |ssh|
-  ssh.exec! "cd kameleon_workdir/NFD/ && ./waf configure && ./waf && ./waf install"
+  ssh.exec! "cd kameleon_workdir/NFD/ && ./waf clean && ./waf && ./waf install"
 end
 
 
-# Downloading compiled lib from the first node
+puts "Downloading compiled lib from the first node"
 
 Net::SCP.start("#{topo.keys.first}-adm",'root') do |scp|
   puts scp.download! "/root/kameleon_workdir/ndn-cxx/build/libndn-cxx.so.0.4.0", "libndn-cxx.so.0.4.0"
 end
 
+puts "Downloading compiled library from first node"
+Net::SCP.start("#{topo.keys.first}-adm",'root') do |scp|
+  puts scp.download! "/root/kameleon_workdir/NFD/build/bin/nfd", "nfd"
+end
+
+
 # putting the modified lib in parallel in all nodes
 
 Cute::TakTuk.start(topo.keys.map{ |m| "#{m}-adm"}, :user => 'root') do |tak|
   tak.put("libndn-cxx.so.0.4.0", "/usr/local/lib/libndn-cxx.so.0.4.0")
+  tak.put("nfd", "/usr/local/bin/nfd")
 end
 
 # we need to transfert file using the admin network
