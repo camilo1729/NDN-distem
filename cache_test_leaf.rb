@@ -53,7 +53,6 @@ Net::SSH.start("n0-0-0-adm", "root") do |ssh|
   ssh.exec! "killall ndnputchunks"
 end
 
-
-File.open("results_cache",'w') do |f|
+File.open("results_cache#{size_in_MB}MB",'w') do |f|
   f.puts(results.to_yaml)
 end
