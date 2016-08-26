@@ -13,24 +13,24 @@ Distem.client { |cl|
   vnodes = []
   numpeers.times do |x|
 
-    cl.vnetwork_create('vnet#{x}', subnets[x].to_string, :network_type => 'vxlan')
+    cl.vnetwork_create("vnet#{x}", subnets[x].to_string, :network_type => 'vxlan')
 
     ips = subnets[x].map{ |ip| ip.to_s}
-    cl.vnode_create('n#{x}',
+    cl.vnode_create("n#{x}",
                   {
 #                   'host' => machine,
                    'vfilesystem' =>{'image' => NDNIMG,'cow' => true},
                    'vifaces' => [
-                                 {'name' => 'if0', 'vnetwork' => 'vnet#{x}', 'address' => ips[2]},
+                                 {'name' => 'if0', 'vnetwork' => "vnet#{x}", 'address' => ips[2]},
                                 ]
                   })
 
-    cl.vnode_create('n#{x}-1',
+    cl.vnode_create("n#{x}-1",
                   {
  #                   'host' => machine,
                    'vfilesystem' =>{'image' => NDNIMG,'cow' => true},
                    'vifaces' => [
-                                 {'name' => 'if0', 'vnetwork' => 'vnet#{x}', 'address' => ips[3]},
+                                 {'name' => 'if0', 'vnetwork' => "vnet#{x}", 'address' => ips[3]},
                                 ]
                   })
 
@@ -38,7 +38,7 @@ Distem.client { |cl|
   end
 
   puts "Starting vnodes..."
-  cl.vnodes_start(nodes)
+  cl.vnodes_start(vnodes)
   puts "Waiting for vnodes to be here..."
   sleep(30)
   ret = cl.wait_vnodes({'timeout' => 1200, 'port' => 22})
