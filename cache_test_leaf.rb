@@ -15,7 +15,7 @@ end
 #nodes.delete("uiuc")
 
 # putting a file available
-size_in_MB = ARGV[0]
+size_in_MB = ARGV[0].to_i
 FILE_TEST = "file#{size_in_MB}"
 
 
