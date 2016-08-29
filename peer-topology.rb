@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 require 'distem'
+require 'cute'
+load 'nlsrcGen-peer.rb'
 
 NDNIMG="/home/cruizsanabria/jessie-ndn-lxc.tar.gz"
 numpeers = 16
@@ -10,9 +12,10 @@ subnets = vnetwork.subnet(24)
 dir_config = "nslr_config"
 Dir.mkdir dir_config
 
-Distem.client { |cl|
+vnodes = []
+Distem.client do |cl|
 
-  vnodes = []
+
   numpeers.times do |x|
 
     cl.vnetwork_create("vnet#{x}", subnets[x].to_string, :network_type => 'vxlan')
@@ -74,11 +77,12 @@ handler = Proc.new do |server|
   end
 end
 
+hostnames = vnodes.map{ |m| "#{m}-adm"}
 
 # Testing connection
 Net::SSH::Multi.start(:on_error => handler) do |session|
    session.group :vnodes do
-     topo.keys.each { |vnode| session.use("root@#{vnode}-adm",{:paranoid => false})}
+     hostnames.each { |vnode| session.use("root@#{vnode}",{:paranoid => false})}
    end
    puts session.with(:vnodes).exec "hostname"
    # updating library path
@@ -87,13 +91,12 @@ end
 
 
 # we need to transfert file using the admin network
-topo.keys.each do |vnode|
+hostnames.each do |vnode|
   # setting admin address
-  node_name = "#{vnode}-adm"
-  Net::SCP.start(node_name,'root') do |scp|
+  Net::SCP.start(vnode,'root') do |scp|
     conf_file ="root/nlsr-#{vnode}.conf"
     nlsr_start_file = "root/nlsr-start.sh"
-    puts "uploading #{File.basename(conf_file)} to node: #{node_name}"
+    puts "uploading #{File.basename(conf_file)} to node: #{vnode}"
     puts scp.upload! conf_file,File.basename(conf_file)
     puts scp.upload! nlsr_start_file,File.basename(nlsr_start_file)
   end
@@ -107,8 +110,8 @@ File.open("hosts_helper.yaml",'w') do |f|
 end
 
 File.open("machinefile.txt", 'w') do |f|
-  topo.keys.each { |vnode|  f.puts vnode}
+  hostnames.each { |vnode|  f.puts vnode}
 end
 
 
-}
+end
