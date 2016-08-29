@@ -15,7 +15,7 @@ end
 #nodes.delete("uiuc")
 
 # putting a file available
-size_in_MB = 20
+size_in_MB = ARGV[0]
 FILE_TEST = "file#{size_in_MB}"
 
 
@@ -29,11 +29,16 @@ end
 
 
 # waiting for the file to be available
+puts "waiting for the file to be available"
 
-sleep 100
+sleep size_in_MB
+
+# choosing leave nodes
+
+vnodes = File.readlines("machinefile.txt").map{ |m| m.chop}
 
 
-nodes_to_test = ["n0-0-1","n0-0-2","n0-0-3","n1-0-0","n1-0-1","n1-0-2","n1-0-3","n2-0-0","n2-0-1","n2-0-2","n2-0-3"]
+nodes_to_test = vnodes.select{ |m| m[/n.-\d*-\d*/]}
 results = {}
 
 puts "Starting to download file on all nodes"
