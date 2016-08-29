@@ -73,7 +73,7 @@ neighbors
   negihbor
   {
     name /ndn/#{neighbor[:site]}/#{neighbor[:router]}
-    face-uri udp://#{node[:ip]}
+    face-uri udp://#{neighbor[:ip]}
     link-cost 25
   }
 
