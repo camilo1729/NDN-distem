@@ -1,10 +1,11 @@
 #!/usr/bin/ruby
 require 'distem'
 require 'cute'
+require 'net/scp'
 load 'nlsrcGen-peer.rb'
 
 NDNIMG="/home/cruizsanabria/jessie-ndn-lxc.tar.gz"
-numpeers = 16
+numpeers = 8
 vnetwork = IPAddress::IPv4.new("10.144.0.0/18")
 
 subnets = vnetwork.subnet(24)
@@ -13,6 +14,7 @@ dir_config = "nslr_config"
 Dir.mkdir dir_config
 
 vnodes = []
+hosts = {}
 Distem.client do |cl|
 
 
@@ -44,11 +46,13 @@ Distem.client do |cl|
     vnodes+=[node1,node2]
 
     puts "Generating configuration files"
-    node = {:site => "s#{x}",:router => "r#{x}", :ip => ips[2]}
-    neighbor = {:site => "s#{x}-1",:router => "r#{x}-1", :ip => ips[3]}
+    node = {:name => node1,:site => "s#{x}",:router => "r#{x}", :ip => ips[2]}
+    neighbor = {:name => node2,:site => "s#{x}-1",:router => "r#{x}-1", :ip => ips[3]}
     File.open("#{dir_config}/nlsr-#{node1}.conf",'w') {|f| f.write confGen(node,neighbor)}
     File.open("#{dir_config}/nlsr-#{node2}.conf",'w') {|f| f.write confGen(neighbor,node)}
-
+    hosts[node1.to_sym] = ips[2]
+    hosts[node2.to_sym] = ips[3]
+    
   end
 
 
@@ -64,20 +68,20 @@ Distem.client do |cl|
     puts "vnodes are unreachable"
   end
 
-handler = Proc.new do |server|
+  handler = Proc.new do |server|
 
-  server[:connection_attempts] ||= 0
-  if server[:connection_attempts] < 40
-    server[:connection_attempts] += 1
-    puts "Retrying connection"
-    sleep 5
-    throw :go, :retry
-  else
-    throw :go, :raise
+    server[:connection_attempts] ||= 0
+    if server[:connection_attempts] < 40
+      server[:connection_attempts] += 1
+      puts "Retrying connection"
+      sleep 5
+      throw :go, :retry
+    else
+      throw :go, :raise
+    end
   end
-end
-
-hostnames = vnodes.map{ |m| "#{m}-adm"}
+  
+  hostnames = vnodes.map{ |m| "#{m}-adm"}
 
 # Testing connection
 Net::SSH::Multi.start(:on_error => handler) do |session|
@@ -91,23 +95,26 @@ end
 
 
 # we need to transfert file using the admin network
-hostnames.each do |vnode|
+File.open("hosts_file",'w') do |f|
+  hosts.each{ |host, ip| f.puts("#{host}\t#{ip}")}
+end
+
+
+vnodes.each do |vnode|
   # setting admin address
-  Net::SCP.start(vnode,'root') do |scp|
-    conf_file ="root/nlsr-#{vnode}.conf"
-    nlsr_start_file = "root/nlsr-start.sh"
+  Net::SCP.start("#{vnode}-adm",'root') do |scp|
+    conf_file ="#{dir_config}/nlsr-#{vnode}.conf"
+    nlsr_start_file = "nlsr-start.sh"
     puts "uploading #{File.basename(conf_file)} to node: #{vnode}"
     puts scp.upload! conf_file,File.basename(conf_file)
     puts scp.upload! nlsr_start_file,File.basename(nlsr_start_file)
+    puts scp.upload! "hosts_file","/etc/hosts"
   end
 end
 
 
 # saving host for /etch/hosts
 
-File.open("hosts_helper.yaml",'w') do |f|
-  f.puts(hosts.to_yaml)
-end
 
 File.open("machinefile.txt", 'w') do |f|
   hostnames.each { |vnode|  f.puts vnode}
