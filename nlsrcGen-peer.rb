@@ -7,7 +7,7 @@ general
   ; mandatory configuration command section network, site and router
 
   network /ndn/        ; name of the network the router belongs to in ndn URI format
-  site #{node[:site]}    ; name of the site the router belongs to in ndn URI format
+  site /ndn/#{node[:site]}    ; name of the site the router belongs to in ndn URI format
   router #{node[:router]}    ; name of the router in ndn URI format
 
   ; lsa-refresh-time is the time in seconds, after which router will refresh its LSAs
@@ -123,7 +123,7 @@ advertising
   ; the ndnname is used to advertised name from the router. To advertise each name prefix
   ; configure one block of ndnname configuration command for every name prefix.
 
-  prefix /ndn/#{node["name"]
+  prefix /ndn/#{node[:name]}
 }
 
 security
