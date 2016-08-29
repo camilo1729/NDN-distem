@@ -73,11 +73,17 @@ Distem.client do |cl|
 
   topo.each_pair do |name,h|
     h['neighs'].each do |n|
-      n_name = n.is_a?(Hash)? n.keys.first : n
+      if n.is_a?(Hash)
+        n_name = n.keys.first
+        latency = n.values.first
+      else
+        n_name = n
+      end
+
       inf = n_name <= name
       res = cl.viface_create(name, "#{n_name}#{name}",
                              { 'vnetwork' => "#{ ((inf) ? n_name : name)}-#{ ((inf) ? name : n_name)}",
-                              'output' =>{"latency" =>{"delay" => "10ms"} } })
+                              'output' =>{"latency" =>{"delay" => "#{latency}ms"} } })
       addr = res['address'].split('/').first
       hosts[n_name] << [addr,name]
     end
