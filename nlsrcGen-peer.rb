@@ -7,8 +7,8 @@ general
   ; mandatory configuration command section network, site and router
 
   network /ndn/        ; name of the network the router belongs to in ndn URI format
-  site #{node["site"]}    ; name of the site the router belongs to in ndn URI format
-  router #{node["router"]}    ; name of the router in ndn URI format
+  site #{node[:site]}    ; name of the site the router belongs to in ndn URI format
+  router #{node[:router]}    ; name of the router in ndn URI format
 
   ; lsa-refresh-time is the time in seconds, after which router will refresh its LSAs
   lsa-refresh-time 1800      ; default value 1800. Valid values 240-7200
@@ -72,8 +72,8 @@ neighbors
 
   negihbor
   {
-    name /ndn/#{neighbor["site"]}/#{neighbor['router']}
-    face-uri udp//#{node["ip"]}
+    name /ndn/#{neighbor[:site]}/#{neighbor[:router]}
+    face-uri udp//#{node[:ip]}
     link-cost 25
   }
 
