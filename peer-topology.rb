@@ -5,7 +5,7 @@ require 'net/scp'
 load 'nlsrcGen-peer.rb'
 
 NDNIMG="/home/cruizsanabria/jessie-ndn-lxc.tar.gz"
-numpeers = 8
+numpeers = 16
 vnetwork = IPAddress::IPv4.new("10.144.0.0/18")
 
 subnets = vnetwork.subnet(24)
@@ -15,6 +15,8 @@ Dir.mkdir dir_config
 
 vnodes = []
 hosts = {}
+machines = ["grisou-38","grisou-39","grisou-40","grisou-41","grisou-42","grisou-43","grisou-44","grisou-45","grisou-46","grisou-47","grisou-48","grisou-49","grisou-50","grisou-51",
+           "grisou-6","grisou-7","grisou-8","grisou-9"]
 Distem.client do |cl|
 
 
@@ -27,7 +29,7 @@ Distem.client do |cl|
     ips = subnets[x].map{ |ip| ip.to_s}
     cl.vnode_create(node1,
                   {
-#                   'host' => machine,
+                   'host' => machines[x],
                    'vfilesystem' =>{'image' => NDNIMG,'cow' => true},
                    'vifaces' => [
                                  {'name' => 'if0', 'vnetwork' => "vnet#{x}", 'address' => ips[2]},
@@ -36,7 +38,7 @@ Distem.client do |cl|
 
     cl.vnode_create(node2,
                   {
- #                   'host' => machine,
+                   'host' => machines[x],
                    'vfilesystem' =>{'image' => NDNIMG,'cow' => true},
                    'vifaces' => [
                                  {'name' => 'if0', 'vnetwork' => "vnet#{x}", 'address' => ips[3]},
