@@ -30,7 +30,7 @@ end
 
 # waiting for the file to be available
 # value for 600MB file, to change for smaller files
-sleep 400
+sleep size_in_MB
 
 puts "Starting to download file on all nodes"
 results = {}

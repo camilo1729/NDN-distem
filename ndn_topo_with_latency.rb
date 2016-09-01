@@ -78,6 +78,7 @@ Distem.client do |cl|
         latency = n.values.first
       else
         n_name = n
+        latency = 10
       end
 
       inf = n_name <= name
