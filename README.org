@@ -85,7 +85,7 @@ All the number shown have to be bigger than zero and very close between them.
 
 * MAX_NDN_PACKET_SIZE bug
 
-We downloa the header to modify the variable =MAX_NDN_PACKET_SIZE=
+We downloa the header to modify the variable =MAX_NDN_PACKET_SIZE= located on the source file =ndn-ccx/src/encoding/tlv.hpp=
 
 #+BEGIN_SRC sh
 $ wget  https://raw.githubusercontent.com/named-data/ndn-cxx/4b4f754fbd1b79097c012d181b903b80397273b4/src/encoding/tlv.hpp
