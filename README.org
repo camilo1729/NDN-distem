@@ -22,7 +22,7 @@ Deploying environment:
 Executing debootstrap with btrfs options:
 
 #+BEGIN_SRC sh
- $ distem-bootstrap -g --debian-version jessie -f /tmp/machinefile --enable-admin-network --btrfs-format /dev/sda5
+ $ distem-bootstrap -g --debian-version jessie --enable-admin-network --btrfs-format /dev/sda5
 #+END_SRC
 
 Sometimes, it is useful to add the parameter =--max-vifaces 1024= to able able to create more vnodes per physical machine.
@@ -39,15 +39,23 @@ $ git clone https://github.com/camilo1729/NDN-distem.git
 #+END_SRC
 
 Create the file =exp.state.yaml= with the names of all physical machines that are running Distem.
+You can use the script =expe_gen.rb= to generate such a file:
+
+#+BEGIN_SRC sh
+ruby exp_gen.rb machinefile "10.144.0.0/12" exp-data.yaml
+#+END_SRC
+
 There are too types of topologies:
 
 - =fai1=: dandelion 3-2-4
 - =fai2=: dandelion 5-2-20
+- =fai500=: dandelion 5-2-50
+- =fai1500=: dandelion 5-2-150
 
 For building an infrastructure type:
 
 #+BEGIN_SRC sh
-$ ruby ndn_topo.rb exp.state.yaml fai1.yaml
+$ ruby ndn_topo.rb exp-data.yaml fai1.yaml
 #+END_SRC
 
 And then start the NDN daemons:
@@ -55,6 +63,25 @@ And then start the NDN daemons:
 #+BEGIN_SRC sh
 $ ruby ndn_start.rb fai1.yaml
 #+END_SRC
+
+
+For big topologies =fai2=, =fai500=, =fai1500=, you have to use other images compile with other value of =MAX_NDN_PACKET_SIZE=.
+This images are available on Nancy site:
+
+- =jessie-ndn-datamax8800.tar.gz=
+- =jessie-ndn-datamax17600.tar.gz=
+- =jessie-ndn-datamax35200.tar.gz=
+- =jessie-ndn-datamax70400.tar.gz=
+
+You have to modify the image on the file =ndn_topo.rb=.
+After deploying the topoloy and starting the =nfd= daemons. You have to veryfie that all the routing tables on all the nodes
+are filled completely. To do this you can use the following command:
+
+#+BEGIN_SRC sh
+for i in $(cat machinefile.txt) ; do ssh $i-adm "nfd-status | grep nodeAnnounce | wc -l"; done
+#+END_SRC
+
+All the number shown have to be bigger than zero and very close between them.
 
 * MAX_NDN_PACKET_SIZE bug
 
@@ -179,11 +206,19 @@ Then, we execute the different experiments:
 
 ** Cache all
 
-We modify the script =cache_test.rb= with the value of the file size we want to test.
-Then, we execute it as follows:
+
+We execute it as follows:
 
 #+BEGIN_SRC sh
-$ ruby cache_test.rb
+for i in $(cat file_sizes); do ruby cache_test.rb $i; done
+#+END_SRC
+
+** Calle all leaves
+
+We execute it as follows:
+
+#+BEGIN_SRC sh
+for i in $(cat file_sizes); do ruby cache_test_leaf.rb $i; done
 #+END_SRC
 
 ** Cache seq
