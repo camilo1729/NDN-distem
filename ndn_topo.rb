@@ -31,6 +31,7 @@ sshkeys = {
 
 system 'mkdir', '-p', 'root'
 system 'rm root/nlsr-*.conf'
+system 'truncate -s 0 ~/.ssh/known_hosts'
 system 'cp nlsr-start.sh root/nlsr-start.sh'
 
 topo.each_pair do |name,hash|
