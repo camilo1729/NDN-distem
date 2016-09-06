@@ -1,0 +1,4636 @@
+---
+n0:
+  router: "/router"
+  site: "/s-0"
+  net: "/n-0"
+  neighs:
+  - n1
+  - n4
+  - n0-0
+  - n0-1
+  announce:
+  - "/netAnnounce0"
+n0-0:
+  router: "/siterouter"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0
+  - n0-0-0
+  - n0-0-1
+  - n0-0-2
+  - n0-0-3
+  - n0-0-4
+  - n0-0-5
+  - n0-0-6
+  - n0-0-7
+  - n0-0-8
+  - n0-0-9
+  - n0-0-10
+  - n0-0-11
+  - n0-0-12
+  - n0-0-13
+  - n0-0-14
+  - n0-0-15
+  - n0-0-16
+  - n0-0-17
+  - n0-0-18
+  - n0-0-19
+  - n0-0-20
+  - n0-0-21
+  - n0-0-22
+  - n0-0-23
+  - n0-0-24
+  - n0-0-25
+  - n0-0-26
+  - n0-0-27
+  - n0-0-28
+  - n0-0-29
+  - n0-0-30
+  - n0-0-31
+  - n0-0-32
+  - n0-0-33
+  - n0-0-34
+  - n0-0-35
+  - n0-0-36
+  - n0-0-37
+  - n0-0-38
+  - n0-0-39
+  - n0-0-40
+  - n0-0-41
+  - n0-0-42
+  - n0-0-43
+  - n0-0-44
+  - n0-0-45
+  - n0-0-46
+  - n0-0-47
+  - n0-0-48
+  - n0-0-49
+  announce:
+  - "/routerAnnounce0x0"
+n0-0-0:
+  router: "/r-0"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x0"
+n0-0-1:
+  router: "/r-1"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x1"
+n0-0-10:
+  router: "/r-10"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x10"
+n0-0-11:
+  router: "/r-11"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x11"
+n0-0-12:
+  router: "/r-12"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x12"
+n0-0-13:
+  router: "/r-13"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x13"
+n0-0-14:
+  router: "/r-14"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x14"
+n0-0-15:
+  router: "/r-15"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x15"
+n0-0-16:
+  router: "/r-16"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x16"
+n0-0-17:
+  router: "/r-17"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x17"
+n0-0-18:
+  router: "/r-18"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x18"
+n0-0-19:
+  router: "/r-19"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x19"
+n0-0-2:
+  router: "/r-2"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x2"
+n0-0-3:
+  router: "/r-3"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x3"
+n0-0-4:
+  router: "/r-4"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x4"
+n0-0-5:
+  router: "/r-5"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x5"
+n0-0-6:
+  router: "/r-6"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x6"
+n0-0-7:
+  router: "/r-7"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x7"
+n0-0-8:
+  router: "/r-8"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x8"
+n0-0-9:
+  router: "/r-9"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x9"
+n0-1:
+  router: "/siterouter"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0
+  - n0-1-0
+  - n0-1-1
+  - n0-1-2
+  - n0-1-3
+  - n0-1-4
+  - n0-1-5
+  - n0-1-6
+  - n0-1-7
+  - n0-1-8
+  - n0-1-9
+  - n0-1-10
+  - n0-1-11
+  - n0-1-12
+  - n0-1-13
+  - n0-1-14
+  - n0-1-15
+  - n0-1-16
+  - n0-1-17
+  - n0-1-18
+  - n0-1-19
+  - n0-1-20
+  - n0-1-21
+  - n0-1-22
+  - n0-1-23
+  - n0-1-24
+  - n0-1-25
+  - n0-1-26
+  - n0-1-27
+  - n0-1-28
+  - n0-1-29
+  - n0-1-30
+  - n0-1-31
+  - n0-1-32
+  - n0-1-33
+  - n0-1-34
+  - n0-1-35
+  - n0-1-36
+  - n0-1-37
+  - n0-1-38
+  - n0-1-39
+  - n0-1-40
+  - n0-1-41
+  - n0-1-42
+  - n0-1-43
+  - n0-1-44
+  - n0-1-45
+  - n0-1-46
+  - n0-1-47
+  - n0-1-48
+  - n0-1-49
+  announce:
+  - "/routerAnnounce0x1"
+n0-1-0:
+  router: "/r-0"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x0"
+n0-1-1:
+  router: "/r-1"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x1"
+n0-1-10:
+  router: "/r-10"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x10"
+n0-1-11:
+  router: "/r-11"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x11"
+n0-1-12:
+  router: "/r-12"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x12"
+n0-1-13:
+  router: "/r-13"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x13"
+n0-1-14:
+  router: "/r-14"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x14"
+n0-1-15:
+  router: "/r-15"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x15"
+n0-1-16:
+  router: "/r-16"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x16"
+n0-1-17:
+  router: "/r-17"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x17"
+n0-1-18:
+  router: "/r-18"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x18"
+n0-1-19:
+  router: "/r-19"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x19"
+n0-1-2:
+  router: "/r-2"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x2"
+n0-1-3:
+  router: "/r-3"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x3"
+n0-1-4:
+  router: "/r-4"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x4"
+n0-1-5:
+  router: "/r-5"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x5"
+n0-1-6:
+  router: "/r-6"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x6"
+n0-1-7:
+  router: "/r-7"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x7"
+n0-1-8:
+  router: "/r-8"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x8"
+n0-1-9:
+  router: "/r-9"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x9"
+n1:
+  router: "/router"
+  site: "/s-1"
+  net: "/n-1"
+  neighs:
+  - n2
+  - n0
+  - n1-0
+  - n1-1
+  announce:
+  - "/netAnnounce1"
+n1-0:
+  router: "/siterouter"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1
+  - n1-0-0
+  - n1-0-1
+  - n1-0-2
+  - n1-0-3
+  - n1-0-4
+  - n1-0-5
+  - n1-0-6
+  - n1-0-7
+  - n1-0-8
+  - n1-0-9
+  - n1-0-10
+  - n1-0-11
+  - n1-0-12
+  - n1-0-13
+  - n1-0-14
+  - n1-0-15
+  - n1-0-16
+  - n1-0-17
+  - n1-0-18
+  - n1-0-19
+  - n1-0-20
+  - n1-0-21
+  - n1-0-22
+  - n1-0-23
+  - n1-0-24
+  - n1-0-25
+  - n1-0-26
+  - n1-0-27
+  - n1-0-28
+  - n1-0-29
+  - n1-0-30
+  - n1-0-31
+  - n1-0-32
+  - n1-0-33
+  - n1-0-34
+  - n1-0-35
+  - n1-0-36
+  - n1-0-37
+  - n1-0-38
+  - n1-0-39
+  - n1-0-40
+  - n1-0-41
+  - n1-0-42
+  - n1-0-43
+  - n1-0-44
+  - n1-0-45
+  - n1-0-46
+  - n1-0-47
+  - n1-0-48
+  - n1-0-49
+  announce:
+  - "/routerAnnounce1x0"
+n1-0-0:
+  router: "/r-0"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x0"
+n1-0-1:
+  router: "/r-1"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x1"
+n1-0-10:
+  router: "/r-10"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x10"
+n1-0-11:
+  router: "/r-11"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x11"
+n1-0-12:
+  router: "/r-12"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x12"
+n1-0-13:
+  router: "/r-13"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x13"
+n1-0-14:
+  router: "/r-14"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x14"
+n1-0-15:
+  router: "/r-15"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x15"
+n1-0-16:
+  router: "/r-16"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x16"
+n1-0-17:
+  router: "/r-17"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x17"
+n1-0-18:
+  router: "/r-18"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x18"
+n1-0-19:
+  router: "/r-19"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x19"
+n1-0-2:
+  router: "/r-2"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x2"
+n1-0-3:
+  router: "/r-3"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x3"
+n1-0-4:
+  router: "/r-4"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x4"
+n1-0-5:
+  router: "/r-5"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x5"
+n1-0-6:
+  router: "/r-6"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x6"
+n1-0-7:
+  router: "/r-7"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x7"
+n1-0-8:
+  router: "/r-8"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x8"
+n1-0-9:
+  router: "/r-9"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x9"
+n1-1:
+  router: "/siterouter"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1
+  - n1-1-0
+  - n1-1-1
+  - n1-1-2
+  - n1-1-3
+  - n1-1-4
+  - n1-1-5
+  - n1-1-6
+  - n1-1-7
+  - n1-1-8
+  - n1-1-9
+  - n1-1-10
+  - n1-1-11
+  - n1-1-12
+  - n1-1-13
+  - n1-1-14
+  - n1-1-15
+  - n1-1-16
+  - n1-1-17
+  - n1-1-18
+  - n1-1-19
+  - n1-1-20
+  - n1-1-21
+  - n1-1-22
+  - n1-1-23
+  - n1-1-24
+  - n1-1-25
+  - n1-1-26
+  - n1-1-27
+  - n1-1-28
+  - n1-1-29
+  - n1-1-30
+  - n1-1-31
+  - n1-1-32
+  - n1-1-33
+  - n1-1-34
+  - n1-1-35
+  - n1-1-36
+  - n1-1-37
+  - n1-1-38
+  - n1-1-39
+  - n1-1-40
+  - n1-1-41
+  - n1-1-42
+  - n1-1-43
+  - n1-1-44
+  - n1-1-45
+  - n1-1-46
+  - n1-1-47
+  - n1-1-48
+  - n1-1-49
+  announce:
+  - "/routerAnnounce1x1"
+n1-1-0:
+  router: "/r-0"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x0"
+n1-1-1:
+  router: "/r-1"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x1"
+n1-1-10:
+  router: "/r-10"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x10"
+n1-1-11:
+  router: "/r-11"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x11"
+n1-1-12:
+  router: "/r-12"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x12"
+n1-1-13:
+  router: "/r-13"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x13"
+n1-1-14:
+  router: "/r-14"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x14"
+n1-1-15:
+  router: "/r-15"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x15"
+n1-1-16:
+  router: "/r-16"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x16"
+n1-1-17:
+  router: "/r-17"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x17"
+n1-1-18:
+  router: "/r-18"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x18"
+n1-1-19:
+  router: "/r-19"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x19"
+n1-1-2:
+  router: "/r-2"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x2"
+n1-1-3:
+  router: "/r-3"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x3"
+n1-1-4:
+  router: "/r-4"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x4"
+n1-1-5:
+  router: "/r-5"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x5"
+n1-1-6:
+  router: "/r-6"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x6"
+n1-1-7:
+  router: "/r-7"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x7"
+n1-1-8:
+  router: "/r-8"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x8"
+n1-1-9:
+  router: "/r-9"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x9"
+n2:
+  router: "/router"
+  site: "/s-2"
+  net: "/n-2"
+  neighs:
+  - n3
+  - n1
+  - n2-0
+  - n2-1
+  announce:
+  - "/netAnnounce2"
+n2-0:
+  router: "/siterouter"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2
+  - n2-0-0
+  - n2-0-1
+  - n2-0-2
+  - n2-0-3
+  - n2-0-4
+  - n2-0-5
+  - n2-0-6
+  - n2-0-7
+  - n2-0-8
+  - n2-0-9
+  - n2-0-10
+  - n2-0-11
+  - n2-0-12
+  - n2-0-13
+  - n2-0-14
+  - n2-0-15
+  - n2-0-16
+  - n2-0-17
+  - n2-0-18
+  - n2-0-19
+  - n2-0-20
+  - n2-0-21
+  - n2-0-22
+  - n2-0-23
+  - n2-0-24
+  - n2-0-25
+  - n2-0-26
+  - n2-0-27
+  - n2-0-28
+  - n2-0-29
+  - n2-0-30
+  - n2-0-31
+  - n2-0-32
+  - n2-0-33
+  - n2-0-34
+  - n2-0-35
+  - n2-0-36
+  - n2-0-37
+  - n2-0-38
+  - n2-0-39
+  - n2-0-40
+  - n2-0-41
+  - n2-0-42
+  - n2-0-43
+  - n2-0-44
+  - n2-0-45
+  - n2-0-46
+  - n2-0-47
+  - n2-0-48
+  - n2-0-49
+  announce:
+  - "/routerAnnounce2x0"
+n2-0-0:
+  router: "/r-0"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x0"
+n2-0-1:
+  router: "/r-1"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x1"
+n2-0-10:
+  router: "/r-10"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x10"
+n2-0-11:
+  router: "/r-11"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x11"
+n2-0-12:
+  router: "/r-12"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x12"
+n2-0-13:
+  router: "/r-13"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x13"
+n2-0-14:
+  router: "/r-14"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x14"
+n2-0-15:
+  router: "/r-15"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x15"
+n2-0-16:
+  router: "/r-16"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x16"
+n2-0-17:
+  router: "/r-17"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x17"
+n2-0-18:
+  router: "/r-18"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x18"
+n2-0-19:
+  router: "/r-19"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x19"
+n2-0-2:
+  router: "/r-2"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x2"
+n2-0-3:
+  router: "/r-3"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x3"
+n2-0-4:
+  router: "/r-4"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x4"
+n2-0-5:
+  router: "/r-5"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x5"
+n2-0-6:
+  router: "/r-6"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x6"
+n2-0-7:
+  router: "/r-7"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x7"
+n2-0-8:
+  router: "/r-8"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x8"
+n2-0-9:
+  router: "/r-9"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x9"
+n2-1:
+  router: "/siterouter"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2
+  - n2-1-0
+  - n2-1-1
+  - n2-1-2
+  - n2-1-3
+  - n2-1-4
+  - n2-1-5
+  - n2-1-6
+  - n2-1-7
+  - n2-1-8
+  - n2-1-9
+  - n2-1-10
+  - n2-1-11
+  - n2-1-12
+  - n2-1-13
+  - n2-1-14
+  - n2-1-15
+  - n2-1-16
+  - n2-1-17
+  - n2-1-18
+  - n2-1-19
+  - n2-1-20
+  - n2-1-21
+  - n2-1-22
+  - n2-1-23
+  - n2-1-24
+  - n2-1-25
+  - n2-1-26
+  - n2-1-27
+  - n2-1-28
+  - n2-1-29
+  - n2-1-30
+  - n2-1-31
+  - n2-1-32
+  - n2-1-33
+  - n2-1-34
+  - n2-1-35
+  - n2-1-36
+  - n2-1-37
+  - n2-1-38
+  - n2-1-39
+  - n2-1-40
+  - n2-1-41
+  - n2-1-42
+  - n2-1-43
+  - n2-1-44
+  - n2-1-45
+  - n2-1-46
+  - n2-1-47
+  - n2-1-48
+  - n2-1-49
+  announce:
+  - "/routerAnnounce2x1"
+n2-1-0:
+  router: "/r-0"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x0"
+n2-1-1:
+  router: "/r-1"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x1"
+n2-1-10:
+  router: "/r-10"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x10"
+n2-1-11:
+  router: "/r-11"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x11"
+n2-1-12:
+  router: "/r-12"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x12"
+n2-1-13:
+  router: "/r-13"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x13"
+n2-1-14:
+  router: "/r-14"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x14"
+n2-1-15:
+  router: "/r-15"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x15"
+n2-1-16:
+  router: "/r-16"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x16"
+n2-1-17:
+  router: "/r-17"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x17"
+n2-1-18:
+  router: "/r-18"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x18"
+n2-1-19:
+  router: "/r-19"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x19"
+n2-1-2:
+  router: "/r-2"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x2"
+n2-1-3:
+  router: "/r-3"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x3"
+n2-1-4:
+  router: "/r-4"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x4"
+n2-1-5:
+  router: "/r-5"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x5"
+n2-1-6:
+  router: "/r-6"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x6"
+n2-1-7:
+  router: "/r-7"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x7"
+n2-1-8:
+  router: "/r-8"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x8"
+n2-1-9:
+  router: "/r-9"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x9"
+n3:
+  router: "/router"
+  site: "/s-3"
+  net: "/n-3"
+  neighs:
+  - n4
+  - n2
+  - n3-0
+  - n3-1
+  announce:
+  - "/netAnnounce3"
+n3-0:
+  router: "/siterouter"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3
+  - n3-0-0
+  - n3-0-1
+  - n3-0-2
+  - n3-0-3
+  - n3-0-4
+  - n3-0-5
+  - n3-0-6
+  - n3-0-7
+  - n3-0-8
+  - n3-0-9
+  - n3-0-10
+  - n3-0-11
+  - n3-0-12
+  - n3-0-13
+  - n3-0-14
+  - n3-0-15
+  - n3-0-16
+  - n3-0-17
+  - n3-0-18
+  - n3-0-19
+  - n3-0-20
+  - n3-0-21
+  - n3-0-22
+  - n3-0-23
+  - n3-0-24
+  - n3-0-25
+  - n3-0-26
+  - n3-0-27
+  - n3-0-28
+  - n3-0-29
+  - n3-0-30
+  - n3-0-31
+  - n3-0-32
+  - n3-0-33
+  - n3-0-34
+  - n3-0-35
+  - n3-0-36
+  - n3-0-37
+  - n3-0-38
+  - n3-0-39
+  - n3-0-40
+  - n3-0-41
+  - n3-0-42
+  - n3-0-43
+  - n3-0-44
+  - n3-0-45
+  - n3-0-46
+  - n3-0-47
+  - n3-0-48
+  - n3-0-49
+  announce:
+  - "/routerAnnounce3x0"
+n3-0-0:
+  router: "/r-0"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x0"
+n3-0-1:
+  router: "/r-1"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x1"
+n3-0-10:
+  router: "/r-10"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x10"
+n3-0-11:
+  router: "/r-11"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x11"
+n3-0-12:
+  router: "/r-12"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x12"
+n3-0-13:
+  router: "/r-13"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x13"
+n3-0-14:
+  router: "/r-14"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x14"
+n3-0-15:
+  router: "/r-15"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x15"
+n3-0-16:
+  router: "/r-16"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x16"
+n3-0-17:
+  router: "/r-17"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x17"
+n3-0-18:
+  router: "/r-18"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x18"
+n3-0-19:
+  router: "/r-19"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x19"
+n3-0-2:
+  router: "/r-2"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x2"
+n3-0-3:
+  router: "/r-3"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x3"
+n3-0-4:
+  router: "/r-4"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x4"
+n3-0-5:
+  router: "/r-5"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x5"
+n3-0-6:
+  router: "/r-6"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x6"
+n3-0-7:
+  router: "/r-7"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x7"
+n3-0-8:
+  router: "/r-8"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x8"
+n3-0-9:
+  router: "/r-9"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x9"
+n3-1:
+  router: "/siterouter"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3
+  - n3-1-0
+  - n3-1-1
+  - n3-1-2
+  - n3-1-3
+  - n3-1-4
+  - n3-1-5
+  - n3-1-6
+  - n3-1-7
+  - n3-1-8
+  - n3-1-9
+  - n3-1-10
+  - n3-1-11
+  - n3-1-12
+  - n3-1-13
+  - n3-1-14
+  - n3-1-15
+  - n3-1-16
+  - n3-1-17
+  - n3-1-18
+  - n3-1-19
+  - n3-1-20
+  - n3-1-21
+  - n3-1-22
+  - n3-1-23
+  - n3-1-24
+  - n3-1-25
+  - n3-1-26
+  - n3-1-27
+  - n3-1-28
+  - n3-1-29
+  - n3-1-30
+  - n3-1-31
+  - n3-1-32
+  - n3-1-33
+  - n3-1-34
+  - n3-1-35
+  - n3-1-36
+  - n3-1-37
+  - n3-1-38
+  - n3-1-39
+  - n3-1-40
+  - n3-1-41
+  - n3-1-42
+  - n3-1-43
+  - n3-1-44
+  - n3-1-45
+  - n3-1-46
+  - n3-1-47
+  - n3-1-48
+  - n3-1-49
+  announce:
+  - "/routerAnnounce3x1"
+n3-1-0:
+  router: "/r-0"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x0"
+n3-1-1:
+  router: "/r-1"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x1"
+n3-1-10:
+  router: "/r-10"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x10"
+n3-1-11:
+  router: "/r-11"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x11"
+n3-1-12:
+  router: "/r-12"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x12"
+n3-1-13:
+  router: "/r-13"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x13"
+n3-1-14:
+  router: "/r-14"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x14"
+n3-1-15:
+  router: "/r-15"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x15"
+n3-1-16:
+  router: "/r-16"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x16"
+n3-1-17:
+  router: "/r-17"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x17"
+n3-1-18:
+  router: "/r-18"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x18"
+n3-1-19:
+  router: "/r-19"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x19"
+n3-1-2:
+  router: "/r-2"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x2"
+n3-1-3:
+  router: "/r-3"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x3"
+n3-1-4:
+  router: "/r-4"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x4"
+n3-1-5:
+  router: "/r-5"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x5"
+n3-1-6:
+  router: "/r-6"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x6"
+n3-1-7:
+  router: "/r-7"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x7"
+n3-1-8:
+  router: "/r-8"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x8"
+n3-1-9:
+  router: "/r-9"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x9"
+n4:
+  router: "/router"
+  site: "/s-4"
+  net: "/n-4"
+  neighs:
+  - n0
+  - n3
+  - n4-0
+  - n4-1
+  announce:
+  - "/netAnnounce4"
+n4-0:
+  router: "/siterouter"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4
+  - n4-0-0
+  - n4-0-1
+  - n4-0-2
+  - n4-0-3
+  - n4-0-4
+  - n4-0-5
+  - n4-0-6
+  - n4-0-7
+  - n4-0-8
+  - n4-0-9
+  - n4-0-10
+  - n4-0-11
+  - n4-0-12
+  - n4-0-13
+  - n4-0-14
+  - n4-0-15
+  - n4-0-16
+  - n4-0-17
+  - n4-0-18
+  - n4-0-19
+  - n4-0-20
+  - n4-0-21
+  - n4-0-22
+  - n4-0-23
+  - n4-0-24
+  - n4-0-25
+  - n4-0-26
+  - n4-0-27
+  - n4-0-28
+  - n4-0-29
+  - n4-0-30
+  - n4-0-31
+  - n4-0-32
+  - n4-0-33
+  - n4-0-34
+  - n4-0-35
+  - n4-0-36
+  - n4-0-37
+  - n4-0-38
+  - n4-0-39
+  - n4-0-40
+  - n4-0-41
+  - n4-0-42
+  - n4-0-43
+  - n4-0-44
+  - n4-0-45
+  - n4-0-46
+  - n4-0-47
+  - n4-0-48
+  - n4-0-49
+  announce:
+  - "/routerAnnounce4x0"
+n4-0-0:
+  router: "/r-0"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x0"
+n4-0-1:
+  router: "/r-1"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x1"
+n4-0-10:
+  router: "/r-10"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x10"
+n4-0-11:
+  router: "/r-11"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x11"
+n4-0-12:
+  router: "/r-12"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x12"
+n4-0-13:
+  router: "/r-13"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x13"
+n4-0-14:
+  router: "/r-14"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x14"
+n4-0-15:
+  router: "/r-15"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x15"
+n4-0-16:
+  router: "/r-16"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x16"
+n4-0-17:
+  router: "/r-17"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x17"
+n4-0-18:
+  router: "/r-18"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x18"
+n4-0-19:
+  router: "/r-19"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x19"
+n4-0-2:
+  router: "/r-2"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x2"
+n4-0-3:
+  router: "/r-3"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x3"
+n4-0-4:
+  router: "/r-4"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x4"
+n4-0-5:
+  router: "/r-5"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x5"
+n4-0-6:
+  router: "/r-6"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x6"
+n4-0-7:
+  router: "/r-7"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x7"
+n4-0-8:
+  router: "/r-8"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x8"
+n4-0-9:
+  router: "/r-9"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x9"
+n4-1:
+  router: "/siterouter"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4
+  - n4-1-0
+  - n4-1-1
+  - n4-1-2
+  - n4-1-3
+  - n4-1-4
+  - n4-1-5
+  - n4-1-6
+  - n4-1-7
+  - n4-1-8
+  - n4-1-9
+  - n4-1-10
+  - n4-1-11
+  - n4-1-12
+  - n4-1-13
+  - n4-1-14
+  - n4-1-15
+  - n4-1-16
+  - n4-1-17
+  - n4-1-18
+  - n4-1-19
+  - n4-1-20
+  - n4-1-21
+  - n4-1-22
+  - n4-1-23
+  - n4-1-24
+  - n4-1-25
+  - n4-1-26
+  - n4-1-27
+  - n4-1-28
+  - n4-1-29
+  - n4-1-30
+  - n4-1-31
+  - n4-1-32
+  - n4-1-33
+  - n4-1-34
+  - n4-1-35
+  - n4-1-36
+  - n4-1-37
+  - n4-1-38
+  - n4-1-39
+  - n4-1-40
+  - n4-1-41
+  - n4-1-42
+  - n4-1-43
+  - n4-1-44
+  - n4-1-45
+  - n4-1-46
+  - n4-1-47
+  - n4-1-48
+  - n4-1-49
+  announce:
+  - "/routerAnnounce4x1"
+n4-1-0:
+  router: "/r-0"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x0"
+n4-1-1:
+  router: "/r-1"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x1"
+n4-1-10:
+  router: "/r-10"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x10"
+n4-1-11:
+  router: "/r-11"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x11"
+n4-1-12:
+  router: "/r-12"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x12"
+n4-1-13:
+  router: "/r-13"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x13"
+n4-1-14:
+  router: "/r-14"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x14"
+n4-1-15:
+  router: "/r-15"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x15"
+n4-1-16:
+  router: "/r-16"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x16"
+n4-1-17:
+  router: "/r-17"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x17"
+n4-1-18:
+  router: "/r-18"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x18"
+n4-1-19:
+  router: "/r-19"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x19"
+n4-1-2:
+  router: "/r-2"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x2"
+n4-1-3:
+  router: "/r-3"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x3"
+n4-1-4:
+  router: "/r-4"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x4"
+n4-1-5:
+  router: "/r-5"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x5"
+n4-1-6:
+  router: "/r-6"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x6"
+n4-1-7:
+  router: "/r-7"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x7"
+n4-1-8:
+  router: "/r-8"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x8"
+n4-1-9:
+  router: "/r-9"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x9"
+n0-0-20:
+  router: "/r-20"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x20"
+n0-0-21:
+  router: "/r-21"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x21"
+n0-0-22:
+  router: "/r-22"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x22"
+n0-0-23:
+  router: "/r-23"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x23"
+n0-0-24:
+  router: "/r-24"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x24"
+n0-0-25:
+  router: "/r-25"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x25"
+n0-0-26:
+  router: "/r-26"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x26"
+n0-0-27:
+  router: "/r-27"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x27"
+n0-0-28:
+  router: "/r-28"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x28"
+n0-0-29:
+  router: "/r-29"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x29"
+n0-1-20:
+  router: "/r-20"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x20"
+n0-1-21:
+  router: "/r-21"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x21"
+n0-1-22:
+  router: "/r-22"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x22"
+n0-1-23:
+  router: "/r-23"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x23"
+n0-1-24:
+  router: "/r-24"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x24"
+n0-1-25:
+  router: "/r-25"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x25"
+n0-1-26:
+  router: "/r-26"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x26"
+n0-1-27:
+  router: "/r-27"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x27"
+n0-1-28:
+  router: "/r-28"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x28"
+n0-1-29:
+  router: "/r-29"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x29"
+n1-0-20:
+  router: "/r-20"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x20"
+n1-0-21:
+  router: "/r-21"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x21"
+n1-0-22:
+  router: "/r-22"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x22"
+n1-0-23:
+  router: "/r-23"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x23"
+n1-0-24:
+  router: "/r-24"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x24"
+n1-0-25:
+  router: "/r-25"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x25"
+n1-0-26:
+  router: "/r-26"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x26"
+n1-0-27:
+  router: "/r-27"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x27"
+n1-0-28:
+  router: "/r-28"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x28"
+n1-0-29:
+  router: "/r-29"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x29"
+n1-1-20:
+  router: "/r-20"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x20"
+n1-1-21:
+  router: "/r-21"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x21"
+n1-1-22:
+  router: "/r-22"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x22"
+n1-1-23:
+  router: "/r-23"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x23"
+n1-1-24:
+  router: "/r-24"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x24"
+n1-1-25:
+  router: "/r-25"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x25"
+n1-1-26:
+  router: "/r-26"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x26"
+n1-1-27:
+  router: "/r-27"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x27"
+n1-1-28:
+  router: "/r-28"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x28"
+n1-1-29:
+  router: "/r-29"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x29"
+n2-0-20:
+  router: "/r-20"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x20"
+n2-0-21:
+  router: "/r-21"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x21"
+n2-0-22:
+  router: "/r-22"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x22"
+n2-0-23:
+  router: "/r-23"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x23"
+n2-0-24:
+  router: "/r-24"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x24"
+n2-0-25:
+  router: "/r-25"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x25"
+n2-0-26:
+  router: "/r-26"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x26"
+n2-0-27:
+  router: "/r-27"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x27"
+n2-0-28:
+  router: "/r-28"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x28"
+n2-0-29:
+  router: "/r-29"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x29"
+n2-1-20:
+  router: "/r-20"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x20"
+n2-1-21:
+  router: "/r-21"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x21"
+n2-1-22:
+  router: "/r-22"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x22"
+n2-1-23:
+  router: "/r-23"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x23"
+n2-1-24:
+  router: "/r-24"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x24"
+n2-1-25:
+  router: "/r-25"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x25"
+n2-1-26:
+  router: "/r-26"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x26"
+n2-1-27:
+  router: "/r-27"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x27"
+n2-1-28:
+  router: "/r-28"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x28"
+n2-1-29:
+  router: "/r-29"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x29"
+n3-0-20:
+  router: "/r-20"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x20"
+n3-0-21:
+  router: "/r-21"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x21"
+n3-0-22:
+  router: "/r-22"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x22"
+n3-0-23:
+  router: "/r-23"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x23"
+n3-0-24:
+  router: "/r-24"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x24"
+n3-0-25:
+  router: "/r-25"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x25"
+n3-0-26:
+  router: "/r-26"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x26"
+n3-0-27:
+  router: "/r-27"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x27"
+n3-0-28:
+  router: "/r-28"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x28"
+n3-0-29:
+  router: "/r-29"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x29"
+n3-1-20:
+  router: "/r-20"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x20"
+n3-1-21:
+  router: "/r-21"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x21"
+n3-1-22:
+  router: "/r-22"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x22"
+n3-1-23:
+  router: "/r-23"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x23"
+n3-1-24:
+  router: "/r-24"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x24"
+n3-1-25:
+  router: "/r-25"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x25"
+n3-1-26:
+  router: "/r-26"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x26"
+n3-1-27:
+  router: "/r-27"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x27"
+n3-1-28:
+  router: "/r-28"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x28"
+n3-1-29:
+  router: "/r-29"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x29"
+n4-0-20:
+  router: "/r-20"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x20"
+n4-0-21:
+  router: "/r-21"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x21"
+n4-0-22:
+  router: "/r-22"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x22"
+n4-0-23:
+  router: "/r-23"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x23"
+n4-0-24:
+  router: "/r-24"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x24"
+n4-0-25:
+  router: "/r-25"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x25"
+n4-0-26:
+  router: "/r-26"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x26"
+n4-0-27:
+  router: "/r-27"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x27"
+n4-0-28:
+  router: "/r-28"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x28"
+n4-0-29:
+  router: "/r-29"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x29"
+n4-1-20:
+  router: "/r-20"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x20"
+n4-1-21:
+  router: "/r-21"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x21"
+n4-1-22:
+  router: "/r-22"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x22"
+n4-1-23:
+  router: "/r-23"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x23"
+n4-1-24:
+  router: "/r-24"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x24"
+n4-1-25:
+  router: "/r-25"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x25"
+n4-1-26:
+  router: "/r-26"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x26"
+n4-1-27:
+  router: "/r-27"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x27"
+n4-1-28:
+  router: "/r-28"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x28"
+n4-1-29:
+  router: "/r-29"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x29"
+n0-0-30:
+  router: "/r-30"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x30"
+n0-0-31:
+  router: "/r-31"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x31"
+n0-0-32:
+  router: "/r-32"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x32"
+n0-0-33:
+  router: "/r-33"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x33"
+n0-0-34:
+  router: "/r-34"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x34"
+n0-0-35:
+  router: "/r-35"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x35"
+n0-0-36:
+  router: "/r-36"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x36"
+n0-0-37:
+  router: "/r-37"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x37"
+n0-0-38:
+  router: "/r-38"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x38"
+n0-0-39:
+  router: "/r-39"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x39"
+n0-0-40:
+  router: "/r-40"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x40"
+n0-0-41:
+  router: "/r-41"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x41"
+n0-0-42:
+  router: "/r-42"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x42"
+n0-0-43:
+  router: "/r-43"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x43"
+n0-0-44:
+  router: "/r-44"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x44"
+n0-0-45:
+  router: "/r-45"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x45"
+n0-0-46:
+  router: "/r-46"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x46"
+n0-0-47:
+  router: "/r-47"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x47"
+n0-0-48:
+  router: "/r-48"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x48"
+n0-0-49:
+  router: "/r-49"
+  site: "/s-0-0"
+  net: "/n-0"
+  neighs:
+  - n0-0
+  announce:
+  - "/nodeAnnounce0x0x49"
+n0-1-30:
+  router: "/r-30"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x30"
+n0-1-31:
+  router: "/r-31"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x31"
+n0-1-32:
+  router: "/r-32"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x32"
+n0-1-33:
+  router: "/r-33"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x33"
+n0-1-34:
+  router: "/r-34"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x34"
+n0-1-35:
+  router: "/r-35"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x35"
+n0-1-36:
+  router: "/r-36"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x36"
+n0-1-37:
+  router: "/r-37"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x37"
+n0-1-38:
+  router: "/r-38"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x38"
+n0-1-39:
+  router: "/r-39"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x39"
+n0-1-40:
+  router: "/r-40"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x40"
+n0-1-41:
+  router: "/r-41"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x41"
+n0-1-42:
+  router: "/r-42"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x42"
+n0-1-43:
+  router: "/r-43"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x43"
+n0-1-44:
+  router: "/r-44"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x44"
+n0-1-45:
+  router: "/r-45"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x45"
+n0-1-46:
+  router: "/r-46"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x46"
+n0-1-47:
+  router: "/r-47"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x47"
+n0-1-48:
+  router: "/r-48"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x48"
+n0-1-49:
+  router: "/r-49"
+  site: "/s-0-1"
+  net: "/n-0"
+  neighs:
+  - n0-1
+  announce:
+  - "/nodeAnnounce0x1x49"
+n1-0-30:
+  router: "/r-30"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x30"
+n1-0-31:
+  router: "/r-31"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x31"
+n1-0-32:
+  router: "/r-32"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x32"
+n1-0-33:
+  router: "/r-33"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x33"
+n1-0-34:
+  router: "/r-34"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x34"
+n1-0-35:
+  router: "/r-35"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x35"
+n1-0-36:
+  router: "/r-36"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x36"
+n1-0-37:
+  router: "/r-37"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x37"
+n1-0-38:
+  router: "/r-38"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x38"
+n1-0-39:
+  router: "/r-39"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x39"
+n1-0-40:
+  router: "/r-40"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x40"
+n1-0-41:
+  router: "/r-41"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x41"
+n1-0-42:
+  router: "/r-42"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x42"
+n1-0-43:
+  router: "/r-43"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x43"
+n1-0-44:
+  router: "/r-44"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x44"
+n1-0-45:
+  router: "/r-45"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x45"
+n1-0-46:
+  router: "/r-46"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x46"
+n1-0-47:
+  router: "/r-47"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x47"
+n1-0-48:
+  router: "/r-48"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x48"
+n1-0-49:
+  router: "/r-49"
+  site: "/s-1-0"
+  net: "/n-1"
+  neighs:
+  - n1-0
+  announce:
+  - "/nodeAnnounce1x0x49"
+n1-1-30:
+  router: "/r-30"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x30"
+n1-1-31:
+  router: "/r-31"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x31"
+n1-1-32:
+  router: "/r-32"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x32"
+n1-1-33:
+  router: "/r-33"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x33"
+n1-1-34:
+  router: "/r-34"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x34"
+n1-1-35:
+  router: "/r-35"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x35"
+n1-1-36:
+  router: "/r-36"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x36"
+n1-1-37:
+  router: "/r-37"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x37"
+n1-1-38:
+  router: "/r-38"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x38"
+n1-1-39:
+  router: "/r-39"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x39"
+n1-1-40:
+  router: "/r-40"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x40"
+n1-1-41:
+  router: "/r-41"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x41"
+n1-1-42:
+  router: "/r-42"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x42"
+n1-1-43:
+  router: "/r-43"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x43"
+n1-1-44:
+  router: "/r-44"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x44"
+n1-1-45:
+  router: "/r-45"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x45"
+n1-1-46:
+  router: "/r-46"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x46"
+n1-1-47:
+  router: "/r-47"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x47"
+n1-1-48:
+  router: "/r-48"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x48"
+n1-1-49:
+  router: "/r-49"
+  site: "/s-1-1"
+  net: "/n-1"
+  neighs:
+  - n1-1
+  announce:
+  - "/nodeAnnounce1x1x49"
+n2-0-30:
+  router: "/r-30"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x30"
+n2-0-31:
+  router: "/r-31"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x31"
+n2-0-32:
+  router: "/r-32"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x32"
+n2-0-33:
+  router: "/r-33"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x33"
+n2-0-34:
+  router: "/r-34"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x34"
+n2-0-35:
+  router: "/r-35"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x35"
+n2-0-36:
+  router: "/r-36"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x36"
+n2-0-37:
+  router: "/r-37"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x37"
+n2-0-38:
+  router: "/r-38"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x38"
+n2-0-39:
+  router: "/r-39"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x39"
+n2-0-40:
+  router: "/r-40"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x40"
+n2-0-41:
+  router: "/r-41"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x41"
+n2-0-42:
+  router: "/r-42"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x42"
+n2-0-43:
+  router: "/r-43"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x43"
+n2-0-44:
+  router: "/r-44"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x44"
+n2-0-45:
+  router: "/r-45"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x45"
+n2-0-46:
+  router: "/r-46"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x46"
+n2-0-47:
+  router: "/r-47"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x47"
+n2-0-48:
+  router: "/r-48"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x48"
+n2-0-49:
+  router: "/r-49"
+  site: "/s-2-0"
+  net: "/n-2"
+  neighs:
+  - n2-0
+  announce:
+  - "/nodeAnnounce2x0x49"
+n2-1-30:
+  router: "/r-30"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x30"
+n2-1-31:
+  router: "/r-31"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x31"
+n2-1-32:
+  router: "/r-32"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x32"
+n2-1-33:
+  router: "/r-33"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x33"
+n2-1-34:
+  router: "/r-34"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x34"
+n2-1-35:
+  router: "/r-35"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x35"
+n2-1-36:
+  router: "/r-36"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x36"
+n2-1-37:
+  router: "/r-37"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x37"
+n2-1-38:
+  router: "/r-38"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x38"
+n2-1-39:
+  router: "/r-39"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x39"
+n2-1-40:
+  router: "/r-40"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x40"
+n2-1-41:
+  router: "/r-41"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x41"
+n2-1-42:
+  router: "/r-42"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x42"
+n2-1-43:
+  router: "/r-43"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x43"
+n2-1-44:
+  router: "/r-44"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x44"
+n2-1-45:
+  router: "/r-45"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x45"
+n2-1-46:
+  router: "/r-46"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x46"
+n2-1-47:
+  router: "/r-47"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x47"
+n2-1-48:
+  router: "/r-48"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x48"
+n2-1-49:
+  router: "/r-49"
+  site: "/s-2-1"
+  net: "/n-2"
+  neighs:
+  - n2-1
+  announce:
+  - "/nodeAnnounce2x1x49"
+n3-0-30:
+  router: "/r-30"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x30"
+n3-0-31:
+  router: "/r-31"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x31"
+n3-0-32:
+  router: "/r-32"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x32"
+n3-0-33:
+  router: "/r-33"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x33"
+n3-0-34:
+  router: "/r-34"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x34"
+n3-0-35:
+  router: "/r-35"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x35"
+n3-0-36:
+  router: "/r-36"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x36"
+n3-0-37:
+  router: "/r-37"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x37"
+n3-0-38:
+  router: "/r-38"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x38"
+n3-0-39:
+  router: "/r-39"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x39"
+n3-0-40:
+  router: "/r-40"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x40"
+n3-0-41:
+  router: "/r-41"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x41"
+n3-0-42:
+  router: "/r-42"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x42"
+n3-0-43:
+  router: "/r-43"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x43"
+n3-0-44:
+  router: "/r-44"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x44"
+n3-0-45:
+  router: "/r-45"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x45"
+n3-0-46:
+  router: "/r-46"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x46"
+n3-0-47:
+  router: "/r-47"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x47"
+n3-0-48:
+  router: "/r-48"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x48"
+n3-0-49:
+  router: "/r-49"
+  site: "/s-3-0"
+  net: "/n-3"
+  neighs:
+  - n3-0
+  announce:
+  - "/nodeAnnounce3x0x49"
+n3-1-30:
+  router: "/r-30"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x30"
+n3-1-31:
+  router: "/r-31"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x31"
+n3-1-32:
+  router: "/r-32"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x32"
+n3-1-33:
+  router: "/r-33"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x33"
+n3-1-34:
+  router: "/r-34"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x34"
+n3-1-35:
+  router: "/r-35"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x35"
+n3-1-36:
+  router: "/r-36"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x36"
+n3-1-37:
+  router: "/r-37"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x37"
+n3-1-38:
+  router: "/r-38"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x38"
+n3-1-39:
+  router: "/r-39"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x39"
+n3-1-40:
+  router: "/r-40"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x40"
+n3-1-41:
+  router: "/r-41"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x41"
+n3-1-42:
+  router: "/r-42"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x42"
+n3-1-43:
+  router: "/r-43"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x43"
+n3-1-44:
+  router: "/r-44"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x44"
+n3-1-45:
+  router: "/r-45"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x45"
+n3-1-46:
+  router: "/r-46"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x46"
+n3-1-47:
+  router: "/r-47"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x47"
+n3-1-48:
+  router: "/r-48"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x48"
+n3-1-49:
+  router: "/r-49"
+  site: "/s-3-1"
+  net: "/n-3"
+  neighs:
+  - n3-1
+  announce:
+  - "/nodeAnnounce3x1x49"
+n4-0-30:
+  router: "/r-30"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x30"
+n4-0-31:
+  router: "/r-31"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x31"
+n4-0-32:
+  router: "/r-32"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x32"
+n4-0-33:
+  router: "/r-33"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x33"
+n4-0-34:
+  router: "/r-34"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x34"
+n4-0-35:
+  router: "/r-35"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x35"
+n4-0-36:
+  router: "/r-36"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x36"
+n4-0-37:
+  router: "/r-37"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x37"
+n4-0-38:
+  router: "/r-38"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x38"
+n4-0-39:
+  router: "/r-39"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x39"
+n4-0-40:
+  router: "/r-40"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x40"
+n4-0-41:
+  router: "/r-41"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x41"
+n4-0-42:
+  router: "/r-42"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x42"
+n4-0-43:
+  router: "/r-43"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x43"
+n4-0-44:
+  router: "/r-44"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x44"
+n4-0-45:
+  router: "/r-45"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x45"
+n4-0-46:
+  router: "/r-46"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x46"
+n4-0-47:
+  router: "/r-47"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x47"
+n4-0-48:
+  router: "/r-48"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x48"
+n4-0-49:
+  router: "/r-49"
+  site: "/s-4-0"
+  net: "/n-4"
+  neighs:
+  - n4-0
+  announce:
+  - "/nodeAnnounce4x0x49"
+n4-1-30:
+  router: "/r-30"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x30"
+n4-1-31:
+  router: "/r-31"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x31"
+n4-1-32:
+  router: "/r-32"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x32"
+n4-1-33:
+  router: "/r-33"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x33"
+n4-1-34:
+  router: "/r-34"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x34"
+n4-1-35:
+  router: "/r-35"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x35"
+n4-1-36:
+  router: "/r-36"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x36"
+n4-1-37:
+  router: "/r-37"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x37"
+n4-1-38:
+  router: "/r-38"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x38"
+n4-1-39:
+  router: "/r-39"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x39"
+n4-1-40:
+  router: "/r-40"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x40"
+n4-1-41:
+  router: "/r-41"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x41"
+n4-1-42:
+  router: "/r-42"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x42"
+n4-1-43:
+  router: "/r-43"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x43"
+n4-1-44:
+  router: "/r-44"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x44"
+n4-1-45:
+  router: "/r-45"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x45"
+n4-1-46:
+  router: "/r-46"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x46"
+n4-1-47:
+  router: "/r-47"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x47"
+n4-1-48:
+  router: "/r-48"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x48"
+n4-1-49:
+  router: "/r-49"
+  site: "/s-4-1"
+  net: "/n-4"
+  neighs:
+  - n4-1
+  announce:
+  - "/nodeAnnounce4x1x49"
