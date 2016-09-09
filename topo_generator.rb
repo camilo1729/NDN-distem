@@ -1,6 +1,4 @@
 require 'yaml'
-require 'pry'
-
 
 output = ARGV[0]
 leaves = ARGV[1].to_i
@@ -9,6 +7,7 @@ central = ARGV[3].to_i
 file = YAML.load(File.read("fai3.yaml"))
 #topo = file.clone
 
+puts central
 topo = {}
 # binding.pry
 (0..central).each do |c|
@@ -30,5 +29,5 @@ topo = {}
 
   end
 end
-  binding.pry
+
 File.open(output,'w') { |f| f.write topo.to_yaml}
