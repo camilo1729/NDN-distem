@@ -2,9 +2,9 @@ require 'yaml'
 
 output = ARGV[0]
 leaves = ARGV[1].to_i
-medium = ARGV[2].to_i
-central = ARGV[3].to_i
-file = YAML.load(File.read("fai3.yaml"))
+medium = ARGV[2].to_i-1
+central = ARGV[3].to_i-1
+
 #topo = file.clone
 
 puts central
