@@ -8,7 +8,7 @@ require 'ipaddress'
 require 'net/scp'
 load 'nlsrcGen.rb'
 
-FSIMG="/home/cruizsanabria/jessie-ndn-lxc.tar.gz"
+FSIMG="/home/cruizsanabria/jessie-ndn-datamax70400.tar.gz"
 
 stateFile=ARGV[0]
 topoFile=ARGV[1]
@@ -25,13 +25,12 @@ hosts = {}
 private_key = IO.readlines('/root/.ssh/id_rsa').join
 public_key = IO.readlines('/root/.ssh/id_rsa.pub').join
 sshkeys = {
-  'private' => private_key,
-  'public' => public_key
+ 'private' => private_key,
+ 'public' => public_key
 }
 
 system 'mkdir', '-p', 'root'
 system 'rm root/nlsr-*.conf'
-system 'truncate -s 0 ~/.ssh/known_hosts'
 system 'cp nlsr-start.sh root/nlsr-start.sh'
 
 topo.each_pair do |name,hash|
@@ -60,7 +59,7 @@ Distem.client do |cl|
     end
     puts name
     puts expState['nodes'][i]
-    cl.vnode_create(name, { 'host' => expState['nodes'][i] },  sshkeys)
+    cl.vnode_create(name, { 'host' => expState['nodes'][i] })
     cl.vfilesystem_create(name,  { 'image' => "file://#{FSIMG}" , :cow => true})
    # cl.viface_create(name, "all0", { 'vnetwork' => 'netall'})
     h['neighs'].each do |n|
@@ -69,8 +68,8 @@ Distem.client do |cl|
       then
         ip = iplist[cont_ip]
         puts ip
-        cl.vnetwork_create("#{n_name}-#{name}", "#{ip.to_s}/27")
-        cont_ip+=32
+        cl.vnetwork_create("#{n_name}-#{name}", "#{ip.to_s}/24", {'network_type' => 'classical'})
+        cont_ip+=64
       else nil
       end
     end
@@ -88,7 +87,14 @@ Distem.client do |cl|
   end
 
   cl.vnodes_start(topo.keys)
-  cl.set_global_etchosts
+  ret = cl.wait_vnodes({'timeout' => 1200, 'port' => 22})
+  if ret
+    cl.set_global_arptable
+    cl.set_global_etchosts
+  else
+    puts "Cannot reach all the vnodes"
+    exit 1
+  end
 end
 
 topo.keys.each do |name|
@@ -128,16 +134,18 @@ end
 
 
 # we need to transfert file using the admin network
+tid = []
 topo.keys.each do |vnode|
-  # setting admin address
-  node_name = "#{vnode}-adm"
-  Net::SCP.start(node_name,'root') do |scp|
-    conf_file ="root/nlsr-#{vnode}.conf"
-    nlsr_start_file = "root/nlsr-start.sh"
-    puts "uploading #{File.basename(conf_file)} to node: #{node_name}"
-    puts scp.upload! conf_file,File.basename(conf_file)
-    puts scp.upload! nlsr_start_file,File.basename(nlsr_start_file)
-  end
+
+    # setting admin address
+    node_name = "#{vnode}-adm"
+    Net::SCP.start(node_name,'root') do |scp|
+      conf_file ="root/nlsr-#{vnode}.conf"
+      nlsr_start_file = "root/nlsr-start.sh"
+      puts "uploading #{File.basename(conf_file)} to node: #{node_name}"
+      puts scp.upload! conf_file,File.basename(conf_file)
+      puts scp.upload! nlsr_start_file,File.basename(nlsr_start_file)
+    end
 end
 
 
