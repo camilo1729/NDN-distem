@@ -12,7 +12,7 @@ topo = {}
 # binding.pry
 (0..central).each do |c|
 #  core = {
-  central_nodes = (0..central).map{ |v| "n#{v}"} + ["n0","n10"]
+  central_nodes = (0..central).map{ |v| "n#{v}"} + ["n0","n#{central}"]
   i = central_nodes.index("n#{c}")
   neighs = [central_nodes[i-1],central_nodes[i+1]]
   topo["n#{c}"] = {"router"=>"/router", "site"=>"/s-#{c}", "net"=>"/n-#{c}", "neighs"=>neighs, "announce"=>["/netAnnounce#{c}"]}
