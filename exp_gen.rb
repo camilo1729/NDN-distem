@@ -1,5 +1,4 @@
 require 'yaml'
-require 'pry'
 
 expe_data = {}
 
