@@ -32,6 +32,7 @@ sshkeys = {
 system 'mkdir', '-p', 'root'
 system 'rm root/nlsr-*.conf'
 system 'cp nlsr-start.sh root/nlsr-start.sh'
+system 'truncate -s 0 ~/.ssh/known_hosts'
 
 topo.each_pair do |name,hash|
   File.open("root/nlsr-#{name}.conf",'w') {|f| f.write confGen(hash,topo)}
@@ -68,7 +69,7 @@ Distem.client do |cl|
       then
         ip = iplist[cont_ip]
         puts ip
-        cl.vnetwork_create("#{n_name}-#{name}", "#{ip.to_s}/24", {'network_type' => 'classical'})
+        cl.vnetwork_create("#{n_name}-#{name}", "#{ip.to_s}/26", {'network_type' => 'classical'})
         cont_ip+=64
       else nil
       end
