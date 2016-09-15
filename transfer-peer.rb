@@ -37,7 +37,7 @@ Net::SSH::Multi.start do |session|
   sleep size_in_MB
   puts "Starting to download file on all nodes"
   # we setup latencies of 10ms so we have to augment the -l parameter
-  results = session.with(:client).exec! "time ndncatchunks  -l 100 -d iterative -p 20 /ndn/$(hostname | tr \"-\" \"\n\" | head -n 1)/#{FILE_TEST} > download"
+  results = session.with(:client).exec! "time ndncatchunks  -l 100 -d iterative -p 20 /ndn/$(hostname | tr \"-\" \"\\n\" | head -n 1)/#{FILE_TEST} > download"
 
   sleep 10
   puts "killing all instances of nndputchunks"
