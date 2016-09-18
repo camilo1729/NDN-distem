@@ -68,6 +68,7 @@ $ ruby ndn_start.rb fai1.yaml
 For big topologies =fai2=, =fai500=, =fai1500=, you have to use other images compile with other value of =MAX_NDN_PACKET_SIZE=.
 This images are available on Nancy site:
 
+- =jessie-ndn-lxc.tar.gz=
 - =jessie-ndn-datamax8800.tar.gz=
 - =jessie-ndn-datamax17600.tar.gz=
 - =jessie-ndn-datamax35200.tar.gz=
@@ -82,6 +83,13 @@ for i in $(cat machinefile.txt) ; do ssh $i-adm "nfd-status | grep nodeAnnounce 
 #+END_SRC
 
 All the number shown have to be bigger than zero and very close between them.
+
+All experimets were done using the image =jessie-ndn-lxc.tar.gz= that contains the following versions of tools:
+
+- ndn-cxx: 606e665e61
+- ndn-tools: 799390a4e4
+- NFD: 8509398137
+- NLSR: af909fcc13
 
 * MAX_NDN_PACKET_SIZE bug
 
